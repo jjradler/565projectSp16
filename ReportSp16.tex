@@ -13,7 +13,7 @@
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
 \title{565 IR stark shift thingy}
-\author{The Author}
+\author{C. Houferak, E. Rabe, J. J. Radler}
 \date{\today}                                           % Activate to display a given date or no date
 
 
@@ -35,8 +35,12 @@ observed. Hopefully our understanding of Stark effects in the ground and excited
 will elucidate some of the dynamics of the transient IR study.
 \end{abstract}
 
+%---------------------------------------------------------------------------------------------------------------------------------
+
 \section{Introduction}
 Weeeeeee Typing thangs
+
+%---------------------------------------------------------------------------------------------------------------------------------
 
 \section{Theory}
 
@@ -53,17 +57,36 @@ A = \sum k_{ij}^{2}\\
 \end{split}
 \end{equation*}
 
+%---------------------------------------------------------------------------------------------------------------------------------
+
 \section{Methodology}
 %\subsection{}
+
+The Stark effect comes in when a field is applied. \\Applied fields to observe Stark shifts\\Calibration curve:\\
+\begin{center}	Apply external E field \\	Measure IR spectrum\\	Calibrate Stark shifts for use in Pump Probe\\	Watch Charge transfer (local E field) \\
+\end{center}Easy to put in an external field (molecule comes into Equilibrium in the field) to see the IR \\The molecule is geometry optimized, then frequency calculated\\Static = x,y,z then value of the field\\Geometry optimization in a static E field (google the warnings to explain it) \\Include point charges (dummy charges)\\ Dipole along z-axis, put two point charges on the axis and vary the distance to vary magnitude of the field. \\
+
+\subsection{Start at ground state Calibration Curve thingy for Stark Shifts Static E fields}a.	Opt+freq $\longrightarrow$ postprocess for IR
+\subsection{Excited state opt+freq $\longrightarrow$ postprocess for IR}a.	Same process
+\subsection{Model pump probe using Stark shift Calibration (dynamics, no ext field)}a.	BOMD  $\longrightarrow$ freq  postprocess for IR
+\begin{center}??????PROFIT!!!! 
+\end{center}
+
+%---------------------------------------------------------------------------------------------------------------------------------
 
 \section{Computational Results}
 
 
+%---------------------------------------------------------------------------------------------------------------------------------
+
 \section{Discussion}
 
+
+%---------------------------------------------------------------------------------------------------------------------------------
 
 \section{Conclusion}
 
 
+%---------------------------------------------------------------------------------------------------------------------------------
 
 \end{document}  
