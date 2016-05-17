@@ -6,6 +6,10 @@
 \usepackage{graphicx}
 \usepackage{amssymb}
 \usepackage{epstopdf}
+\usepackage{amsmath}
+\usepackage{cancel}
+\usepackage{float}
+
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
 \title{565 IR stark shift thingy}
@@ -36,7 +40,18 @@ Weeeeeee Typing thangs
 
 \section{Theory}
 
-Some theoretical hand-wavey bullshit and lots of "beautiful mathematics" shall go here.  Someday. 
+Some theoretical hand-wavey bullshit and lots of "beautiful mathematics" shall go here.  Someday.\\
+
+Here is an inline expression:  $N = \frac{1}{2} \hbar$.  Whereas here we have a single line expression:
+
+$$ \Psi = \sum_{i} A_{ij} c^{\dag}.$$
+
+\begin{equation*}
+\begin{split}
+A + (B + C) = (A + B) + C\\
+A = \sum k_{ij}^{2}\\
+\end{split}
+\end{equation*}
 
 \section{Methodology}
 %\subsection{}
