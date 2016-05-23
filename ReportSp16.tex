@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 \documentclass[11pt]{achemso}
 \usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
 \geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
@@ -215,4 +216,127 @@ PROFIT!!!!
 
 %---------------------------------------------------------------------------------------------------------------------------------
 
+=======
+\documentclass[11pt]{amsart}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{amsmath}
+\usepackage{cancel}
+\usepackage{float}
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{565 IR stark shift thingy}
+\author{C. Houferak, E. Rabe, J. J. Radler}
+\date{\today}                                           % Activate to display a given date or no date
+
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Our chosen system of study is the 2-[(7-4-[N,N-Bis(4-methylphenyl)amino]phenyl-2,1,3-
+benzothiadiazol-4-yl)methylene]propanedinitrile (DTDCPB) chromophore prevalent in organic
+photovoltaic materials research. DTDCPB has nitrile groups that make it ideal for
+IR studies due to its strong signature stretching frequency. For the first component of our
+project, we hope to simulate some ground state IR spectra of DTDCPB in the presence
+of varying external fields. This can then be used to calculate the Stark shift and build a
+calibration curve for the effect of external field on the Stark shift of this molecule. Furthermore,
+we plan to probe the excited state of DTDCPB as well and see if we can look at Stark
+effects in the excited state as well. The third step we hope to investigate is a pump-probe
+transient IR study of this molecule where the excited state dynamics of DTDCPB can be
+observed. Hopefully our understanding of Stark effects in the ground and excited states
+will elucidate some of the dynamics of the transient IR study.
+\end{abstract}
+
+%---------------------------------------------------------------------------------------------------------------------------------
+
+\section{Introduction}
+As research in solar energy becomes increasingly important for environmental applications, several new strategies are being investigated to increase the efficiency of these devices. Specificlly in organic photovoltaics (OPVs), one such strategy has been to use small molecules iwth large ground-state dipole moments. It is believed that these dipoles can allow for enhanced hole hopping and can minimize charge recombination (ref Griffith). One particularly promising molecule is  2-[(7-4-[N,N-Bis(4-methylphenyl)amino]phenyl-2,1,3-benzothiadiazol-4-yl)methylene]propanedinitrile (DTDCPB) and has resulted in OPVs with power conversion effiencies of up to 9.6\%.  The nitrile groups present in teh molecule can act as reporter moieties for vibrational spectroscopy. By modeling the effect of an applied electric field on absorption spectrum (Stark Effect), it is then possible to gather information regarding the local electric field during charge transfer events in a photovoltaic device via excited state IR spectroscopy. The first requires a thorough understanding of the electric field dependence of the ground state IR spectrum before probing the excited state. 
+
+%---------------------------------------------------------------------------------------------------------------------------------
+
+\section{Theory}
+
+Some theoretical hand-wavey bullshit and lots of "beautiful mathematics" shall go here.  Someday.\\
+
+Here is an inline expression:  $N = \frac{1}{2} \hbar$.  Whereas here we have a single line expression:
+
+$$ \Psi = \sum_{i} A_{ij} c^{\dag}.$$
+
+\begin{equation*}
+\begin{split}
+A + (B + C) = (A + B) + C\\
+A = \sum k_{ij}^{2}\\
+\end{split}
+\end{equation*}
+
+%---------------------------------------------------------------------------------------------------------------------------------
+
+\section{Methodology}
+%\subsection{}
+
+The Stark effect comes in when a field is applied. \\
+
+Applied fields to observe Stark shifts\\
+
+Calibration curve:\\
+\begin{center}
+	Apply external E field \\
+	Measure IR spectrum\\
+	Calibrate Stark shifts for use in Pump Probe\\
+	Watch Charge transfer (local E field) \\
+\end{center}
+
+Easy to put in an external field (molecule comes into Equilibrium in the field) to see the IR \\
+
+The molecule is geometry optimized, then frequency calculated\\
+
+Static = x,y,z then value of the field\\
+
+Geometry optimization in a static E field (google the warnings to explain it) \\
+
+Include point charges (dummy charges)\\ 
+
+Dipole along z-axis, put two point charges on the axis and vary the distance to vary magnitude of the field. \\
+
+
+\subsection{Start at ground state Calibration Curve thingy for Stark Shifts Static E fields}
+a.	Opt+freq $\longrightarrow$ postprocess for IR
+
+\subsection{Excited state opt+freq $\longrightarrow$ postprocess for IR}
+a.	Same process
+
+\subsection{Model pump probe using Stark shift Calibration (dynamics, no ext field)}
+a.	BOMD  $\longrightarrow$ freq  postprocess for IR
+\begin{center}
+??????
+PROFIT!!!! 
+\end{center}
+
+%---------------------------------------------------------------------------------------------------------------------------------
+
+\section{Computational Results}
+
+
+%---------------------------------------------------------------------------------------------------------------------------------
+
+\section{Discussion}
+
+
+%---------------------------------------------------------------------------------------------------------------------------------
+
+\section{Conclusion}
+
+
+%---------------------------------------------------------------------------------------------------------------------------------
+
+>>>>>>> c18171279bbe508fb30ea0f325bbf3ea8d495fc6
 \end{document}  
