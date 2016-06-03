@@ -23,7 +23,9 @@
 \begin{document}
 \maketitle
 % I THINK WE NEED TO REWORK THE ABSTRACT TO REFLECT THE PROJECT PLAN WE 
-% PRESENTED IN OUR TALK -- JJR 6/2 
+% PRESENTED IN OUR TALK. IT ALSO NEEDS TO BE 100 WORDS OR LESS ACCORDING TO
+%CHEMICAL PHYSICS LETTERS GUIDELINES FOR AUTHORS -- JJR 6/3
+
 \begin{abstract}
 Our chosen system of study is the \emph{2-[(7-4-[N,N-Bis(4-methylphenyl)amino]phenyl-2,1,3-
 benzothiadiazol-4-yl)methylene]propanedinitrile} (DTDCPB) chromophore prevalent in organic
@@ -40,10 +42,12 @@ will elucidate some of the dynamics of the transient IR study. \textbf{CURRENTLY
 \end{abstract}
 
 %---------------------------------------------------------------------------------------------------------------------------------
+%INTRODUCTION (I THINK THIS IS WHERE OUR 1000 WORDS BEGINS)
+%---------------------------------------------------------------------------------------------------------------------------------
 
 \section{Introduction}
 
-As research in solar energy becomes increasingly important for environmental applications,
+\par As research in solar energy becomes increasingly important for environmental applications,
  several new strategies are being investigated to increase the efficiency of these devices. 
  Specificlly in organic photovoltaics (OPVs), one such strategy has been to use small molecules with 
  large ground-state dipole moments. It is believed that these dipoles can allow for enhanced hole 
@@ -54,16 +58,31 @@ As research in solar energy becomes increasingly important for environmental app
  By modeling the effect of an applied electric field on absorption spectrum (Stark Effect), it is then 
  possible to gather information regarding the local electric field during charge transfer events in a 
  photovoltaic device via excited state IR spectroscopy. The first requires a thorough understanding 
- of the electric field dependence of the ground state IR spectrum before probing the excited state.  \textbf{CURRENTLY 168 WORDS}
+ of the electric field dependence of the ground state IR spectrum before probing the excited state.
+ 
+ \par From a rational materials development standpoint, the ability to understand the mechanisms
+  behind these phenomena enables the tuning and enhancement of current materials 
+  in order to create novel, high-efficiency semiconductor and photovoltaic devices. Therefore, 
+  computational modeling of these systems is a powerful tool in our kit for developing advanced
+   materials. In this study we use two different computational methods for examining the Stark effect
+    in DTDCPB. Understanding the changes in electronic structure as a result of applied static fields (from the surrounding media in a crystal of DTDCPB)
+    requires the use of models which account for both the electronic structure (quantum mechanical \emph{ab initio} methods) 
+    and also the vibrations of nuclei which can be probed experimentally through vibrational spectroscopy. 
+  
+  \par This study was carried out in several stages. First, the equilibrium properties of the DTDCPB molecule for the ground state were obtained through frequency calculations in \emph{Gaussian 09}. The Stark effect was modeled and calibrated by applying external static electric fields of various magnitudes to the optimized equilibrium geometries and performing the same frequency calculations as in the model without an applied field. The changes in frequency were obtained from the frequency calculations and compared to calibrate the Stark shifts for the various field strengths. Subsequently, Born-Oppenheimer Molecular Dynamics were used to obtain model spectra using a different set of methods from the standard frequency calculations in \emph{Gaussian 09}.
+    
+ \textbf{CURRENTLY 402 WORDS}
 
 %---------------------------------------------------------------------------------------------------------------------------------
+%THEORY SECTION
+%---------------------------------------------------------------------------------------------------------------------------------
+
 \section{Theory}
 
-\par In order to obtain vibrational spectra of the full DTDCPB dimer system and model the experiment efficiently, a technique called Born-Oppenheimer Molecular Dynamics (BOMD) was applied first to a cyanide molecule (as a test case), subsequently to DTDCPB monomer, and finally to the DTDCPB dimer system. BOMD is an \emph{ab initio} molecular dynamics method which couples quantum mechanical calculation of the electronic structure and potentials to a classical treatment of nuclear dynamics. We chose to use BOMD for the larger molecular systems specifically because it is able to capture more of the physics of the system of interest more efficiently than the traditional method of calculating the Hessian to obtain the frequency eigenvalues. Specifically, BOMD is able to capture the anharmonicity in nuclear motion, which may only be included in purely \emph{ab initio} calculations by including the third derivative (third order correction) term in the Taylor expansion expression of the energy as a function of nuclear position and creating an anharmonicity matrix from the system of equations describing the potential energy surface (PES). This is, of course, more computationally expensive than only calculating a first time-derivative of the dipole moment as in BOMD.  \textbf{CURRENTLY 195 WORDS}
-
+% brief overview of 
 \subsection{Standard Frequency Calculations}
 
-\par First, a brief description of how the \emph{ab initio} frequency calculations are performed in the \textbf{g09} distribution of Gaussian.  
+\par First, a brief description of how the \emph{ab initio} frequency calculations are performed in the \textbf{g09} distribution of Gaussian is in order.  
 
 \begin{equation}
 \begin{split}
@@ -72,16 +91,20 @@ E(Q) = E_{0}(Q) +
 \end{split}
 \end{equation}
 
+% explanation of the Stark effect and how we model it 
+\subsection{The Stark Effect}
+
+Discussion of the Stark Effect (what is it, how do we model it?)
+
+% explanation of BOMD and comparison with standard frequency methods in Gaussian 09
 \subsection{Born-Oppenheimer MD (BOMD)}
 
 \par Now some nuts and bolts for how BOMD is performed (Summarize, but with some equations for specifics like in the presentation.)
 
-\par The nuclear dynamics calculations needed to simulate vibrational spectra were carried out in various dipole field strengths defined in \emph{Gaussian} in order to ``calibrate" the Stark shifts in the product spectra. First the molecular geometry was optimized in \emph{Gaussian} at the \textit{B3LYP/6-311G(d,p)} level of theory in the presence of a static electric field generated by a dipole oriented along the principal $z$-axis. Then, thermal sampling is carried out in the same electric field to generate trajectories for nuclear dynamics in a separate job using the optimized geometry.
+% more needs to go here about the nuts and bolts of BOMD 
+\par Specifically, BOMD is able to capture the anharmonicity in nuclear motion, which may only be included in purely \emph{ab initio} calculations by including the third derivative (third order correction) term in the Taylor expansion expression of the energy as a function of nuclear position and creating an anharmonicity matrix from the system of equations describing the potential energy surface (PES). This is, of course, more computationally expensive than only calculating a first time-derivative of the dipole moment as in BOMD.  
 
-
-\subsection{The Stark Effect}
-
-Some discussion and math about the Stark Shift will go here. 
+\par The nuclear dynamics calculations needed to simulate vibrational spectra were carried out in various dipole field strengths defined in \emph{Gaussian} in order to ``calibrate" the Stark shifts in the product spectra. First the molecular geometry was optimized in \emph{Gaussian} at the \textit{B3LYP/6-311G(d,p)} level of theory in the presence of a static electric field generated by a dipole oriented along the $z$-axis perpendicular to the plane within which most of the DTDCPB molecule is embedded. Then, thermal sampling is carried out in the same electric field to generate trajectories for nuclear dynamics in a separate job using the optimized geometry. 
 
 \subsection{Obtaining Spectra from Dipole Orientation Time Series}
 
@@ -89,18 +112,16 @@ How to calculate spectra from dipole autocorrelation functions vs. how it's done
 
 
 %---------------------------------------------------------------------------------------------------------------------------------
+METHODS SECTION
+%---------------------------------------------------------------------------------------------------------------------------------
 
 \section{Methodology}
+\subsection{Overview of the Process}
 
-
-
-
-\textbf{I THINK WE SHOULD PUT THE NUTS AND BOLTS IN THE THEORY SECTION AND JUST BLAZE THROUGH METHODOLOGY REFERRING TO WHAT WAS EXPLAINED IN THE THEORY SECTION AND SUBSECTIONS}
-
-
-\subsection{Calibrating Stark Shift}
 
 The Stark effect comes in when a field is applied. \\
+
+Why are we using a static field? \\
 
 Applied fields to observe Stark shifts\\
 
@@ -122,37 +143,44 @@ Geometry optimization in a static E field (google the warnings to explain it) \\
 
 Include point charges (dummy charges)\\ 
 
-Dipole along z-axis, put two point charges on the axis and vary the distance to vary magnitude of the field. \\
+Dipole along z-axis, put two point charges on the axis and vary the distance to vary magnitude of the field. Z-axis is normal to the plane of the molecule \\
+
+% some notes on BOMD implementation. 
+
+In order to efficiently obtain vibrational spectra of the full DTDCPB dimer system and model the experiment BOMD was first applied to a cyanide ion as a test case to coarsely model the nitriles on DTDCPB. Subsequently, it was applied to DTDCPB monomer, and finally to the DTDCPB dimer system. BOMD is an \emph{ab initio} molecular dynamics method which couples quantum mechanical calculation of the electronic structure and potentials to a classical treatment of nuclear dynamics. We chose to use BOMD for the larger molecular systems specifically because it is able to capture more of the physics of the system of interest more efficiently than the traditional method of calculating the Hessian to obtain the frequency eigenvalues. 
 
 
-\subsection{Start at ground state Calibration Curve thingy for Stark Shifts Static E fields}
-a.	Opt+freq $\longrightarrow$ postprocess for IR
-
-\subsection{Excited state opt+freq $\longrightarrow$ postprocess for IR}
-a.	Same process
-
-\subsection{Model pump probe using Stark shift Calibration (dynamics, no ext field)}
-a.	BOMD  $\longrightarrow$ freq  postprocess for IR
-\begin{center}
-??????
-PROFIT!!!! 
-\end{center}
-
+%---------------------------------------------------------------------------------------------------------------------------------
+RESULTS
 %---------------------------------------------------------------------------------------------------------------------------------
 
 \section{Computational Results}
 
 
 %---------------------------------------------------------------------------------------------------------------------------------
+DISCUSSION
+%---------------------------------------------------------------------------------------------------------------------------------
+
 
 \section{Discussion}
 
 
 %---------------------------------------------------------------------------------------------------------------------------------
+CONCLUSIONS
+%---------------------------------------------------------------------------------------------------------------------------------
 
 \section{Conclusion}
 
+% I am including some continuing work in here, but we should place our conclusions from this current work before it. --JJR 6/3
+
+
+
 
 %---------------------------------------------------------------------------------------------------------------------------------
+ACKNOWLEDGEMENTS
+%---------------------------------------------------------------------------------------------------------------------------------
+
+\section{Acknowledgements}
+
 
 \end{document}  
