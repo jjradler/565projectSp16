@@ -61,15 +61,15 @@ will elucidate some of the dynamics of the transient IR study. \textbf{CURRENTLY
  of the electric field dependence of the ground state IR spectrum before probing the excited state.
  
  \par From a rational materials development standpoint, the ability to understand the mechanisms
-  behind these phenomena enables the tuning and enhancement of current materials 
-  in order to create novel, high-efficiency semiconductor and photovoltaic devices. Therefore, 
-  computational modeling of these systems is a powerful tool in our kit for developing advanced
-   materials. In this study we use two different computational methods for examining the Stark effect
-    in DTDCPB. Understanding the changes in electronic structure as a result of applied static fields (from the surrounding media in a crystal of DTDCPB)
-    requires the use of models which account for both the electronic structure (quantum mechanical \emph{ab initio} methods) 
-    and also the vibrations of nuclei which can be probed experimentally through vibrational spectroscopy. 
+behind these phenomena enables the tuning and enhancement of current materials 
+in order to create novel, high-efficiency semiconductor and photovoltaic devices. Therefore, 
+computational modeling of these systems is a powerful tool in our kit for developing advanced
+materials. In this study we use two different computational methods for examining the Stark effect
+in DTDCPB. Understanding the changes in electronic structure as a result of applied static fields (from the surrounding media in a crystal of DTDCPB)
+requires the use of models which account for both the electronic structure (quantum mechanical \emph{ab initio} methods) 
+and also the vibrations of nuclei which can be probed experimentally through vibrational spectroscopy. 
   
-  \par This study was carried out in several stages. First, the equilibrium properties of the DTDCPB molecule for the ground state were obtained through frequency calculations in \emph{Gaussian 09}. The Stark effect was modeled and calibrated by applying external static electric fields of various magnitudes to the optimized equilibrium geometries and performing the same frequency calculations as in the model without an applied field. The changes in frequency were obtained from the frequency calculations and compared to calibrate the Stark shifts for the various field strengths. Subsequently, Born-Oppenheimer Molecular Dynamics were used to obtain model spectra using a different set of methods from the standard frequency calculations in \emph{Gaussian 09}.
+\par This study was carried out in several stages. First, the equilibrium properties of the DTDCPB molecule for the ground state were obtained through frequency calculations in \emph{Gaussian 09}. The Stark effect was modeled and calibrated by applying external static electric fields of various magnitudes to the optimized equilibrium geometries and performing the same frequency calculations as in the model without an applied field. The changes in frequency were obtained from the frequency calculations and compared to calibrate the Stark shifts for the various field strengths. Subsequently, Born-Oppenheimer Molecular Dynamics were used to obtain model spectra using a different set of methods from the standard frequency calculations in \emph{Gaussian 09}.
     
  \textbf{CURRENTLY 402 WORDS}
 
@@ -82,14 +82,27 @@ will elucidate some of the dynamics of the transient IR study. \textbf{CURRENTLY
 % brief overview of 
 \subsection{Standard Frequency Calculations}
 
-\par First, a brief description of how the \emph{ab initio} frequency calculations are performed in the \textbf{g09} distribution of Gaussian is in order.  
+\par First, a brief description of how the \emph{ab initio} frequency calculations are performed in the \textbf{g09} distribution of Gaussian is in order.  The \emph{normal modes of vibration} are calculated by diagonalizing a matrix of the second derivatives of the electronic potential energy surface (PES) for the system of $N$ atoms.  The eigenvalues of this matrix, called the \emph{Hessian}, correspond to the frequencies of the normal modes of vibration for the system. More explicitly, this matrix is obtained from the Taylor expansion about the potential energy minimum with respect to nuclear position $q_{k}$. This expansion varied by the gradient $g_{k}$ is given by Equation \ref{equation:TaylorElec}.
 
 \begin{equation}
 \begin{split}
-E(Q) = E_{0}(Q) + 
-\label{equation:Taylor}
+E(g_{k}) = E(0) + \sum_{k}\bigg(\frac{\partial E}{\partial q_{k}}\bigg)q_{k} + \frac{1}{2}\sum_{j,k}q_{j} \bigg(\frac{\partial ^{2} E}{\partial q_{j} \partial q_{k}}\bigg) q_{k} + \frac{1}{6}\sum_{j,k} q_{j} \bigg(\frac{\partial ^{3}E}{\partial q_{j} \partial q_{k} \partial q_{l}} \bigg) q_{k} q_{l} + \cdots
+\label{equation:TaylorElec}
 \end{split}
 \end{equation}
+
+where $q_{k}$ corresponds to the potential energy surface coordinate, $g_{k}$ is the gradient, and $j, k = 1,\cdots,N$.  We find that the Hessian is our second geometric derivative term $H_{j,k} = (\partial ^{2}E / \partial q_{j} \partial q_{k})$ in the Taylor expansion, and we can more compactly rewrite Equation \ref{equation:TaylorElec} as 
+
+\begin{equation}
+\begin{split}
+E(g_{k}) = E(0) + \sum_{k}g_{k} + \frac{1}{2}\sum_{j,k}q_{j} H_{j,k} q_{k} + \frac{1}{6}\sum_{j,k} q_{j} A_{j,k,l} q_{k} q_{l} + \cdots
+\label{equation:TaylorElec2}
+\end{split}
+\end{equation}
+
+Where the gradient $g_{k}$ is defined by the first geometric derivative, the Hessian matrix is given as $H_{j,k}$ and the anharmonicity $A_{jkl}$ is defined by the third geometric derivative with respect to $q_{k}$ in Equation \ref{equation:TaylorElec2}.
+
+% explain the matrix and diagonalization of that matrix briefly to illustrate the method.  Then introduce the frequency intensity equation.  This allows us to quickly compare it with the BOMD method for obtaining the same data. 
 
 % explanation of the Stark effect and how we model it 
 \subsection{The Stark Effect}
