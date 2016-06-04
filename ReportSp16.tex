@@ -110,7 +110,7 @@ Scaling the frequencies $\{\omega_{k}\}$ by the intensity $A_{\tilde{\nu}}(q_{k}
 % explanation of the Stark effect and how we model it 
 \subsection{The Stark Effect}
 
-The Stark effect is a quantum mechanical phenomenon in which the energy level splittings are increased in the presence of an electric field. The effect is readily measured via changes to the vibrational and optical spectra of a species. We can also model it computationally by performing electronic structure calculations accounting for the presence of an external field. The observable effect is that of a change in dipole moment ($\Delta\mu$) which is dependent on the degree of charge separation for a transition. Additionally, we observe a change in polarizability ($\Delta\alpha$) which corresponds to the change in sensitivity of the vibrational transition to the applied field. The change in frequencies is modeled in Equation \ref{equation:Stark} where $V(r_{k})$ is the potential with respect to position $r_{k}$ of electron $k$ around the nuclei.
+The Stark effect is a quantum mechanical phenomenon in which the energy level splittings are increased in the presence of an electric field. The effect is readily measured via changes to the vibrational and optical spectra of a species \textbf{(Figure?)}. We can also model it computationally by performing electronic structure calculations accounting for the presence of an external field. The observable effect is that of a change in dipole moment ($\Delta\mu$) which is dependent on the degree of charge separation for a transition. Additionally, we observe a change in polarizability ($\Delta\alpha$) which corresponds to the change in sensitivity of the vibrational transition to the applied field. The change in frequencies is modeled in Equation \ref{equation:Stark} where $V(r_{k})$ is the potential with respect to position $r_{k}$ of electron $k$ around the nuclei.
 
 \begin{equation}
 \begin{split}
@@ -122,23 +122,34 @@ The Stark effect is a quantum mechanical phenomenon in which the energy level sp
 % explanation of BOMD and comparison with standard frequency methods in Gaussian 09
 \subsection{Born-Oppenheimer MD (BOMD)}
 
-\par This work makes use of an \emph{ab initio molecular dynamics} technique called Born-Oppenheimer Molecular Dynamics (BOMD) to derive the model spectra for DTDCPB both with and without the static electric field present. BOMD 
+\par This work makes use of an \emph{ab initio molecular dynamics} technique called Born-Oppenheimer Molecular Dynamics (BOMD) to derive the model spectra for DTDCPB both with and without the static electric field present. This technique uses Born-Oppenheimer approximate time-\emph{independent} density functional theory (DFT) calculations to compute the electronic potential at each nuclear evolution time step, yet uses classical equations of motion (EOMs) integrated with the Velocity Verlet integration method (Equations \ref{equation:Verlet}) to approximate the nuclear dynamics as a time evolution. 
 
-% more needs to go here about the nuts and bolts of BOMD 
-\par 
+\begin{equation}
+\begin{split}
+\vec{x}(t + \Delta t) = \vec{x}(t) + \vec{v}(t)\Delta t + \frac{1}{2} \vec{a}(t)\Delta t^{2}\\
+\vec{v}(t + \Delta t) = \vec{v}(t) + \frac{\vec{a}(t) + \vec{a}(t + \Delta t)}{2}\Delta t.
+\label{equation:Verlet}
+\end{split}
+\end{equation}
 
+In this context, BOMD has distinct advantages over the standard calculation technique in \emph{Gaussian} of diagonalizing the Hessian as discussed above. The Stark effect is most readily observed in vibrational spectra, thus using purely \emph{ab initio} techniques we require either the second or third geometric derivative of the electronic PES, which can be computationally prohibitively expensive for larger systems. In contrast, BOMD only requires the gradient of the electronic PES to compute the EOMs for the classical nuclear dynamics (Equations \ref{equation:Verlet}) and only the electron density is needed to compute the time-dependent dipole moment (Equation \ref{equation:Dipole}), the time series from which the model spectra are derived. In this manner, BOMD manages to capture a useful amount of the anharmonicity and higher order terms in the Taylor expansion of the potential given by Equations \ref{equation:TaylorElec} and \ref{equation:TaylorElec2} without having to explicitly calculate anything more expensive than the gradient for each time step.  
+
+\begin{equation}
+\begin{split}
+\vec{\mu}(t) = -\sum_{mu}\sum_{nu} P_{\mu\nu}\big(\nu | \mathbf{r}(t) | \mu \big) + \sum_{A} Z_{A}\mathbf{R}_{A}(t)
+\label{equation:Dipole}
+\end{split}
+\end{equation}
 
 \subsection{Obtaining Spectra from Dipole Orientation Time Series}
 
-How to calculate spectra from dipole autocorrelation functions vs. how it's done in the standard frequency calculations (refer to the presentation, but find original references for this...) 
 
 
 %---------------------------------------------------------------------------------------------------------------------------------
-METHODS SECTION
+%METHODS SECTION
 %---------------------------------------------------------------------------------------------------------------------------------
 
 \section{Methodology}
-\subsection{Overview of the Process}
 
 
 The Stark effect comes in when a field is applied. \\
@@ -167,14 +178,14 @@ In order to efficiently obtain vibrational spectra of the full DTDCPB dimer syst
 
 
 %---------------------------------------------------------------------------------------------------------------------------------
-RESULTS
+%RESULTS
 %---------------------------------------------------------------------------------------------------------------------------------
 
 \section{Computational Results}
 
 
 %---------------------------------------------------------------------------------------------------------------------------------
-DISCUSSION
+%DISCUSSION
 %---------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -182,7 +193,7 @@ DISCUSSION
 
 
 %---------------------------------------------------------------------------------------------------------------------------------
-CONCLUSIONS
+%CONCLUSIONS
 %---------------------------------------------------------------------------------------------------------------------------------
 
 \section{Conclusion}
@@ -193,10 +204,11 @@ CONCLUSIONS
 
 
 %---------------------------------------------------------------------------------------------------------------------------------
-ACKNOWLEDGEMENTS
+%ACKNOWLEDGEMENTS
 %---------------------------------------------------------------------------------------------------------------------------------
 
 \section{Acknowledgements}
 
+We would like to thank and acknowledge Professor Xiaosong Li and Professor Cody Schlenker for their support and invaluable feedback.  We would also like to thank the members of the Li Research Group for making themselves available to answer our computational questions and helping us troubleshoot \emph{Gaussian}.  Special thanks go to Dr. Alessio Petrone, Dr. Bo Peng, David Lingerfelt, Patrick Lestrange, and Hongbin Liu for spending their valuable time helping us with this work. Additionally, we would like to thank Hyak, The University of Washington IT Services, and the High Performance Computing Club for making available to us the computational resources required to perform this work. 
 
 \end{document}  
