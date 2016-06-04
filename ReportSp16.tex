@@ -143,7 +143,16 @@ In this context, BOMD has distinct advantages over the standard calculation tech
 
 \subsection{Obtaining Spectra from Dipole Orientation Time Series}
 
+Since BOMD only calculates the first geometric derivative of the PES, we need to obtain the vibrational spectra another way than the normal path followed by a frequency calculation in \emph{Gaussian}. Since the dipole vector $\vec{\mu}(t)$ for each time $t$ is output from BOMD as a time series, we can take the first time derivative $\dot{\vec{\mu}}(t)$ from the time series and use the \emph{dipole autocorrelation function} $\langle \dot{\vec{\mu}}(t), \dot{\vec{\mu}}(t + \tau) \rangle_{\tau}$ as the kernel of an integral transform (Equation \ref{equation:AutoCorr} to obtain the normal mode frequencies and intensities.
 
+\begin{equation}
+\begin{split}
+\mathcal{A}(\omega) \propto \int \langle \dot{\vec{\mu}}(t), \dot{\vec{\mu}}(t + \tau) \rangle_{\tau} e^{- i \omega t} dt.
+\label{equation:AutoCorr}
+\end{split}
+\end{equation}
+
+Plotting the function $\mathcal{A}(\omega)$ along the frequency domain with arbitrary intensity values yields a model spectra very similar to that obtained from diagonalizing the Hessian in an \emph{ab initio} calculation.  
 
 %---------------------------------------------------------------------------------------------------------------------------------
 %METHODS SECTION
