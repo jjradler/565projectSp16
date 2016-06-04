@@ -11,12 +11,12 @@
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
 \title{Stark Shifts in Simulated Excited State Vibrational Spectra}
-\author{C. Houferak}
-\email{houferak@uw.edu}
-\author{E. Rabe}
-\email{rabee@uw.edu}
 \author{J. J. Radler}
 \email{jjradler@uw.edu}
+\author{E. Rabe}
+\email{rabee@uw.edu}
+\author{C. Houferak}
+\email{houferak@uw.edu}
 \affiliation[University of Washington]{Department of Chemistry, University of Washington, Seattle, WA, USA}
 \date{\today}                                           % Activate to display a given date or no date
 
@@ -71,7 +71,7 @@ materials. This study was carried out in several stages. First, the equilibrium 
 %---------------------------------------------------------------------------------------------------------------------------------
 %THEORY SECTION
 %---------------------------------------------------------------------------------------------------------------------------------
-
+% Yes, yes, I know it's far too long... I'll trim it back after I've written everything I can think of and I'll filter it down to include only % the relevant stuff. 
 \section{Theory}
 
 % brief overview of 
@@ -143,7 +143,7 @@ In this context, BOMD has distinct advantages over the standard calculation tech
 
 \subsection{Obtaining Spectra from Dipole Orientation Time Series}
 
-Since BOMD only calculates the first geometric derivative of the PES, we need to obtain the vibrational spectra another way than the normal path followed by a frequency calculation in \emph{Gaussian}. Since the dipole vector $\vec{\mu}(t)$ for each time $t$ is output from BOMD as a time series, we can take the first time derivative $\dot{\vec{\mu}}(t)$ from the time series and use the \emph{dipole autocorrelation function} $\langle \dot{\vec{\mu}}(t), \dot{\vec{\mu}}(t + \tau) \rangle_{\tau}$ as the kernel of an integral transform (Equation \ref{equation:AutoCorr} to obtain the normal mode frequencies and intensities.
+Since BOMD only calculates the first geometric derivative of the PES, we need to obtain the vibrational spectra another way than the normal path followed by a frequency calculation in \emph{Gaussian}. Since the dipole vector $\vec{\mu}(t)$ for each time $t$ is output from BOMD as a time series, we can take the first time derivative $\dot{\vec{\mu}}(t)$ from the time series and use the \emph{dipole autocorrelation function} $\langle \dot{\vec{\mu}}(t), \dot{\vec{\mu}}(t + \tau) \rangle_{\tau}$ as the kernel of an integral transform resembling a Fourier Transform (Equation \ref{equation:AutoCorr} to obtain the normal mode frequencies and intensities. 
 
 \begin{equation}
 \begin{split}
