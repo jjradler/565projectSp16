@@ -8,7 +8,6 @@
 \usepackage{amsmath}
 \usepackage{cancel}
 \usepackage{float}
-\usepackage{cite}
 
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
@@ -44,11 +43,11 @@ benzothiadiazol-4-yl)methylene]propanedinitrile} (DTDCPB). DTDCPB is a promising
 
 \section{Introduction}
 
-\par As research in solar energy becomes increasingly important,
+ As research in solar energy becomes increasingly important,
  several new strategies are being investigated to increase the efficiency of these devices. 
  In organic photovoltaics (OPVs), one new approach uses small molecules with 
  large ground-state dipole moments as electron donors. It is believed the inherent dipole allows for enhanced hole 
- hopping and can minimize charge recombination (ref Griffith). One such molecule 
+ hopping and can minimize charge recombination. \cite{griffith} One such molecule 
  is  2-[(7-4-[N,N-Bis(4-methylphenyl)amino]phenyl-2,1,3-benzothiadiazol-4-yl)methylene]
  propanedinitrile (DTDCPB) and has resulted in OPVs with power conversion effiencies of up to 9.6\%.  
  The nitrile groups present in the molecule can act as reporter moieties for vibrational spectroscopy. 
@@ -57,9 +56,9 @@ benzothiadiazol-4-yl)methylene]propanedinitrile} (DTDCPB). DTDCPB is a promising
  photovoltaic device via excited state IR spectroscopy. This first requires a thorough understanding 
  of the electric field dependence of the groundand excited state IR spectra.
  
- \par Understanding the mechanisms
+Understanding the mechanisms
 of charge transfer events enables rational design and enhancement of current materials 
-for novel, high-efficiency semiconductor and photovoltaic devices. First, frequency calculations determined the equilibrium properties of DTDCPB in \emph{Gaussian 09}. The Stark effect was modeled by frequency calculations in external static electric fields of various magnitudes. Spectral shifts were obtained from these frequency calculations and were correlated to the presence of an electric field. Subsequently, Born-Oppenheimer Molecular Dynamics were used to obtain model spectra using a different set of methods from the standard frequency calculations in \emph{Gaussian 09}.
+for novel, high-efficiency semiconductor and photovoltaic devices. First, frequency calculations determined the equilibrium properties of DTDCPB in \emph{Gaussian 09}. The Stark effect was modeled by frequency calculations in external static electric fields of various magnitudes. Spectral shifts were obtained from these frequency calculations and were correlated to the presence of an electric field. Subsequently, Born-Oppenheimer Molecular Dynamics were used to obtain model spectra using a different set of methods from the standard frequency calculations in \emph{Gaussian 09}. \cite{g09}
     
  \textbf{CURRENTLY 250 WORDS}
 
@@ -108,7 +107,7 @@ Scaling the frequencies $\{\omega_{k}\}$ by the intensity $A_{\tilde{\nu}}(q_{k}
 \end{split}
 \end{equation}
 
-In this context, BOMD has advantages over the \emph{ab initio} frequency calculation discussed above. The Stark effect is most readily observed in vibrational spectra, so using purely \emph{ab initio} techniques we require either the second or third derivative of the electronic PES, which can be computationally expensive for larger systems. In contrast, BOMD only requires the gradient of the electronic PES to propagate nuclear position (Equations \ref{equation:Verlet}) and only the electron density to compute the time-dependent dipole moment (Equation \ref{equation:Dipole}). Thus, BOMD manages to capture some  anharmonicity and higher order terms of the potential $V(\vec{r}_{k})$, (Equations \ref{equation:TaylorElec} and \ref{equation:TaylorElec2}) with only the gradient for each time step.  
+In this context, BOMD has advantages over the \emph{ab initio} frequency calculation discussed above. The Stark effect is most readily observed in vibrational spectra, so using purely \emph{ab initio} techniques we require either the second or third derivative of the electronic PES, which can be computationally expensive for larger systems. In contrast, BOMD only requires the gradient of the electronic PES to propagate nuclear position (Equations \ref{equation:Verlet}) and only the electron density to compute the time-dependent dipole moment (Equation \ref{equation:Dipole}). Thus, BOMD manages to capture some  anharmonicity and higher order terms of the potential $V(\vec{r}_{k})$ with only the gradient for each time step.  
 
 \begin{equation}
 \begin{split}
@@ -128,7 +127,7 @@ Since BOMD only calculates the first derivative of the PES, another method is ne
 \end{split}
 \end{equation}
 
-Plotting the function $\mathcal{A}(\omega)$ along the frequency domain yields a model spectrum.  (\textbf{518 words})
+Plotting the function $\mathcal{A}(\omega)$ along the frequency domain yields a model spectrum.\cite{thomas} (\textbf{518 words})
 
 %---------------------------------------------------------------------------------------------------------------------------------
 %METHODS SECTION
@@ -152,8 +151,8 @@ Plotting the function $\mathcal{A}(\omega)$ along the frequency domain yields a 
 %---------------------------------------------------------------------------------------------------------------------------------
 
 
-\section{Discussion}
-
+%\section{Discussion} <----- We might not even need this section.
+ 
 
 %---------------------------------------------------------------------------------------------------------------------------------
 %CONCLUSIONS
@@ -169,11 +168,10 @@ Plotting the function $\mathcal{A}(\omega)$ along the frequency domain yields a 
 
 \begin{acknowledgement}
 
-We would like to thank and acknowledge Professor Xiaosong Li and Professor Cody Schlenker for their support and invaluable feedback.  We would also like to thank the members of the Li Research Group for making themselves available to answer our computational questions and helping us troubleshoot \emph{Gaussian}.  Special thanks go to Dr. Alessio Petrone, Dr. Bo Peng, David Lingerfelt, Patrick Lestrange, and Hongbin Liu for spending their valuable time helping us with this work. Additionally, we would like to thank Hyak, The University of Washington IT Services, and the High Performance Computing Club for making available to us the computational resources required to perform this work. 
+We would like to thank and acknowledge Professor Xiaosong Li and Professor Cody Schlenker for their support and invaluable feedback.  We would also like to thank the members of the Li Research Group for making themselves available to answer our computational questions and helping us troubleshoot \emph{Gaussian}.  Special thanks go to Dr. Alessio Petrone, Dr. Bo Peng, David Lingerfelt, Patrick Lestrange, and Hongbin Liu for spending their valuable time helping us with this work. Additionally, this work was facilitated though the use of advanced computational, storage, and networking infrastructure provided by the Hyak supercomputer system and funded by the STF at the University of Washington.
 
 \end{acknowledgement}
 
 % includes a BiBTeX bibliography
-\bibliography{acs-ReportSp16}{}
-\bibliographystyle{list}
+\bibliography{ReportSp16}{}
 \end{document}  
