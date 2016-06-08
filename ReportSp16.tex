@@ -27,9 +27,6 @@
 
 \begin{document}
 \maketitle
-% I THINK WE NEED TO REWORK THE ABSTRACT TO REFLECT THE PROJECT PLAN WE 
-% PRESENTED IN OUR TALK. IT ALSO NEEDS TO BE 100 WORDS OR LESS ACCORDING TO
-%CHEMICAL PHYSICS LETTERS GUIDELINES FOR AUTHORS -- JJR 6/3
 
 \setlength{\fboxrule}{0pt}	%this gets rid of the box around the TOC graphic
 \begin{tocentry}
@@ -43,8 +40,13 @@ benzothiadiazol-4-yl)methylene]
 propanedinitrile} (DTDCPB). DTDCPB is a promising push-pull chromophore prevalent in organic photovoltaic research. By applying static electric fields \emph{in silico} and simulating ground state IR spectra, we can determine spectral shifts due to local electric fields.  Born-Oppenheimer molecular dynamics was used to derive the model IR spectra to correlate to experimental data. In hopes of modeling pump-probe transient IR studies of DTDCPB, computational studies of excited-state dynamics are underway.  These studies will enable \emph{in operando} monitoring of electric fields of organic photovoltaic devices. 
 \end{abstract}
 
+
 %---------------------------------------------------------------------------------------------------------------------------------
+<<<<<<< HEAD
 %INTRODUCTION 
+=======
+%INTRODUCTION
+>>>>>>> 24de0ddef0fddee9903e1677acbb2ec98006538a
 %---------------------------------------------------------------------------------------------------------------------------------
 
 \section{Introduction}
@@ -84,7 +86,7 @@ propanedinitrile} (DTDCPB). DTDCPB is a promising push-pull chromophore prevalen
 % explanation of the Stark effect and how we model it 
 \subsection{The Stark Effect}
 
-\par The Stark effect is a phenomenon in which the energy level splittings are altered by the presence of an applied electric field. The effect is measured via changes to vibrational and optical spectra. The key parameters are the change in dipole moment ($\Delta\mu$) dependent on the degree of charge separation for a given transition, and a change in polarizability ($\Delta\alpha$) corresponding to the change in sensitivity of the vibrational transition to the applied field. The interaction of $\Delta\mu$ with an electric field is shown in Figure \ref{fig:stark_shift}a.\cite{boxer} The effect on an isotropic sample produces a broadened spectra (1b) and yields a differential absorbance spectra (1c) which follows the second derivative of the ground state absorption spectrum. Similarly, the effect of $\Delta\alpha$  is shown by Figure 1d-f. We can also model it computationally by performing calculations accounting for the presence of an external field. The change in frequencies is modeled by Equation \ref{equation:Stark} where $V(r_{k})$ is the potential with respect to position $r_{k}$ of electron $k$. \cite{boxer}
+\par The Stark effect is a phenomenon in which the energy level splittings are altered by the presence of an applied electric field. The effect is measured via changes to vibrational and optical spectra. The key parameters are the change in dipole moment ($\Delta\mu$) dependent on the degree of charge separation for a given transition, and a change in polarizability ($\Delta\alpha$) corresponding to the change in sensitivity of the vibrational transition to the applied field. The interaction of $\Delta\mu$ with an electric field is shown in Figure \ref{fig:stark_shift}a.\cite{boxer} The effect on an isotropic sample produces a broadened spectrum (1b) and yields a differential absorbance spectrum (1c) which follows the second derivative of the ground state absorption spectrum. Similarly, the effect of $\Delta\alpha$  is shown by Figure 1d-f. We can also model it computationally by performing calculations accounting for the presence of an external field. The change in frequencies is modeled by Equation \ref{equation:Stark} where $V(r_{k})$ is the potential with respect to position $r_{k}$ of electron $k$. \cite{boxer}
 
 \begin{figure}[H]
 \begin{center}
@@ -151,7 +153,7 @@ Since BOMD only calculates the first derivative of the PES, another method is ne
 \label{fig:BOMDplan}
 \end{figure}
 
-\par BOMD was applied to a cyanide ion as a test case to model the nitriles on DTDCPB. Subsequently, it was applied to the monomer in zero field and applied fields. The systems were brought to ideal initial conditions ``Production MD'' steps by performing thermal Monte Carlo sampling in the electric field to generate multiple nuclear trajectories with thermally populated vibrational normal modes. The production MD runs yielded the dipole time series for calculating the spectra. The individual spectra from the multiple production MD runs can be averaged in the frequency domain to obtain a single spectrum from multiple BOMD runs. Our BOMD application scheme follows that outlined in Figure \ref{fig:BOMDplan}. 
+\par BOMD was applied to a cyanide ion as a test case to model the nitriles on DTDCPB. Subsequently, it will applied to the monomer in zero field and applied fields. The systems were brought to ideal initial conditions ``Production MD'' steps by performing thermal Monte Carlo sampling in the electric field to generate multiple nuclear trajectories with thermally populated vibrational normal modes. The production MD runs yielded the dipole time series for calculating the spectra. The individual spectra from the multiple production MD runs can be averaged in the frequency domain to obtain a single spectrum from multiple BOMD runs. Our BOMD application scheme follows that outlined in Figure \ref{fig:BOMDplan}. 
 
 %---------------------------------------------------------------------------------------------------------------------------------
 %RESULTS
