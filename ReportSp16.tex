@@ -87,7 +87,15 @@ Understanding the mechanisms of charge transfer events enables rational design a
 % explanation of the Stark effect and how we model it 
 \subsection{The Stark Effect}
 
-\par The Stark effect is a phenomenon in which the energy level splittings are altered by the presence of an applied electric field. The effect is measured via changes to the vibrational and optical spectra of a species \textbf{(Figure?)}. We can also model it computationally by performing calculations accounting for the presence of an external field. The parameters of interest are the change in dipole moment ($\Delta\mu$) dependent on the degree of charge separation for a given transition and a change in polarizability ($\Delta\alpha$) corresponding to the change in sensitivity of the vibrational transition to the applied field. The change in frequencies is modeled by Equation \ref{equation:Stark} where $V(r_{k})$ is the potential with respect to position $r_{k}$ of electron $k$.
+\par The Stark effect is a phenomenon in which the energy level splittings are altered by the presence of an applied electric field. The effect is measured via changes to the vibrational and optical spectra of a species. The effect is illustrated in Figure \ref{fig:stark_shift}. We can also model it computationally by performing calculations accounting for the presence of an external field. The parameters of interest are the change in dipole moment ($\Delta\mu$) dependent on the degree of charge separation for a given transition and a change in polarizability ($\Delta\alpha$) corresponding to the change in sensitivity of the vibrational transition to the applied field. The change in frequencies is modeled by Equation \ref{equation:Stark} where $V(r_{k})$ is the potential with respect to position $r_{k}$ of electron $k$.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\linewidth]{stark_shift}
+\end{center}
+\caption{Illustration of the mechanism of the Stark Effect and the corresponding change in observed spectra.}
+\label{fig:stark_shift}
+\end{figure}
 
 \begin{equation}
 \begin{split}
@@ -139,7 +147,15 @@ Plotting the function $\mathcal{A}(\omega)$ along the frequency domain yields a 
 
 \par All \emph{ab initio} calculations performed in this work used the B3LYP/6-311G(d,p) level of theory. The static field was chosen rather than an oscillating field to simulate the local environment around each DTDCPB dimer immediately after another nearby dimer was stimulated into a charge transfer state. The standard frequency calculations for the ground state of DTDCPB both with and without an applied static field were performed to determine the equilibrium geometries in the various environments and generate IR spectra. The field was generated from a static dipole oriented along the $z$-axis normal to the plane in which the majority of the DTDCPB molecule was embedded. 
 
-\par BOMD was applied to a cyanide ion as a test case to model the nitriles on DTDCPB. Subsequently, it was applied to the monomer in zero field and applied fields. The systems were brought to ideal initial conditions ``Production MD'' steps by performing thermal Monte Carlo sampling in the electric field to generate multiple nuclear trajectories with thermally populated vibrational normal modes. The production MD runs yielded the dipole time series for calculating the spectra. The individual spectra from the multiple production MD runs can be averaged in the frequency domain to obtain a single spectrum from multiple BOMD runs. Our BOMD application scheme follows that outlined in Figure \ref{figure:BOMDplan} (\textbf{220 words})
+\begin{figure}
+\begin{center}
+\includegraphics[width=\linewidth]{BOMD_flowchart}
+\end{center}
+\caption{Diagram of the sequence of calculations for obtaining simulated spectra with BOMD. The process is identical for both the cyanide test cases and the DTDCPB monomer.}
+\label{fig:BOMDplan}
+\end{figure}
+
+\par BOMD was applied to a cyanide ion as a test case to model the nitriles on DTDCPB. Subsequently, it was applied to the monomer in zero field and applied fields. The systems were brought to ideal initial conditions ``Production MD'' steps by performing thermal Monte Carlo sampling in the electric field to generate multiple nuclear trajectories with thermally populated vibrational normal modes. The production MD runs yielded the dipole time series for calculating the spectra. The individual spectra from the multiple production MD runs can be averaged in the frequency domain to obtain a single spectrum from multiple BOMD runs. Our BOMD application scheme follows that outlined in Figure \ref{fig:BOMDplan}. (\textbf{220 words})
 
 %---------------------------------------------------------------------------------------------------------------------------------
 %RESULTS
@@ -183,6 +199,9 @@ The frequencies of both stretches in the presence of a static field are presente
  \hline
 \end{tabular}
 \end{table}
+
+\textbf{177 words in text}
+
 %---------------------------------------------------------------------------------------------------------------------------------
 %DISCUSSION
 %---------------------------------------------------------------------------------------------------------------------------------
