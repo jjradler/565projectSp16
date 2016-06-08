@@ -10,6 +10,9 @@
 \usepackage{float}
 \usepackage[export]{adjustbox}
 
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
 \title{Stark Shifts in Simulated Excited State Vibrational Spectra}
@@ -145,10 +148,43 @@ Plotting the function $\mathcal{A}(\omega)$ along the frequency domain yields a 
 %---------------------------------------------------------------------------------------------------------------------------------
 
 \section{Computational Results}
-\par We should maybe report our electric field strengths to be in the units of MV/cm. 0.5V/A=50 MV/cm 0.25MV/cm=25MV/cm.
-We can also say that these fields strengths are appromiately the field strengths involved in H-bonding and dipole-dipole interactions respectively. 
 
+Two nitrile stretching frequencies were detected through the calculation, which will be referred to as the ``symmetric'' and ``asymmetric'' stretches. Their frequencies were 2356.48 and 2334.28 cm$^{-1}$, respectively. Figure \ref{fig:CNstretch} shows the displacement vectors of both stretching frequencies, where in the symmetric stretch both nitrogens stretch in unison and in the asymmetric stretch the nitrogens move in opposition to one another. 
 
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{dtdcpb_groundstate_CNstretch}
+\end{center}
+\caption{Structure of ground state DTDCPB, indicating displacement vectors of nitrile stretching frequency.}
+\label{fig:CNstretch}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{IRspec}
+\end{center}
+\caption{Ground state IR spectrum of DTDCPB.}
+\label{fig:IRspec}
+\end{figure}
+
+The simulated vibrational spectrum is shown in Figure \ref{fig:IRspec}. Although both CN stretching frequencies were calculated, the intensity of the asymmetric stretch was very low, so more focus was placed on the symmetric stretch which had the higher intensity which can be seen in the figure. Experimental IR data would be needed to conclude that the symmetric stretch is of more relevant focus.
+
+The frequencies of both stretches in the presence of a static field are presented below. It is important to note that an applied field of 50 MV/cm is approximately the field strength generated in Hydrogen bonding and that of 25 MV/cm is representative of dipole-dipole interactions.
+
+\begin{table}
+\centering
+\begin{tabular}{ |P{2.5cm}|P{2.5cm}|P{2.5cm}| } 
+ \hline
+ \textbf{Applied Field (MV/cm)} & \textbf{Symmetric Stretch (cm$^{-1}$)}& \textbf{Asymmetric Stretch (cm$^{-1}$)} \\ 
+ \hline
+ 50 & 2331.56 & 2316.55 \\ 
+ 25 & 2338.33 & 2326.76 \\ 
+ 0   & 2346.48 & 2334.28\\
+ -25 & 2338.97 & 2328.01 \\ 
+ -50 & 2331.21 & 2318.22 \\ 
+ \hline
+\end{tabular}
+\end{table}
 %---------------------------------------------------------------------------------------------------------------------------------
 %DISCUSSION
 %---------------------------------------------------------------------------------------------------------------------------------
