@@ -200,7 +200,23 @@ The frequencies of both stretches in the presence of a static field are presente
 \end{tabular}
 \end{table}
 
-\textbf{177 words in text}
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{CN_BOMD}
+\end{center}
+\caption{Four orientations of the CN group along the BOMD trajectory. The bond lengths at each point are a) 1.277 \AA, b) 1.234 \AA, c) 1.156 \AA, and d) 1.094 \AA. }
+\label{fig:CN_BOMD}
+\end{figure}
+
+BOMD for a cyanide group was executed as per the Methodology with success. Figure \ref{fig:CN_BOMD} shows the cyanide group at various bond lengths along its trajectory of vibration. The average bond length along the trajectory was determined to be 1.189 \AA, which is in fair agreement to experimental data for hydrogen cyanide that has bond length of 1.156 \AA. To determine if the BOMD process was executed correctly, the energy of the system was monitored as a function of time, as shown in Figure \ref{fig:energies}. Total energy is conserved and kinetic and potential energy oscillate as one would expect for this two particle system.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{BOMD_energies}
+\end{center}
+\caption{Plots of the kinetic and potential energy along the BOMD timesteps of cyanide are shown in green and blue. Total energy, shown in black, is conserved over the course of the trajectory.}
+\label{fig:energies}
+\end{figure}
 
 %---------------------------------------------------------------------------------------------------------------------------------
 %DISCUSSION
@@ -216,7 +232,7 @@ The frequencies of both stretches in the presence of a static field are presente
 
 \section{Conclusion}
 
-\par From the computational results, there appears to be a Stark shift occurring in the ground state spectra which is nearly symmetric with respect to inversion of applied field orientation in the case of the symmetric stretch. This would indicate that polarizability is the dominant factor behind this Stark shift, as only the magnitude of the field influences the change in frequency. Although the asymmetric stretch shows a Stark shift, its low intensity leads us to believe it would not affect the Stark spectrum of DTDCPB as a whole. Furthermore, we found that BOMD could be applied to the cyanide and maintain proper energy conservation in the zero field case. Once performing BOMD on cyanide in an applied field, we can extend this work to study the entire DTDCPB dimer system with and without applied fields in the ground state, which forms the basis for our continuing work. Once the BOMD runs are successfully completed, the spectra can be compared with experiment to determine the accuracy of this technique for this type of system.  \textbf{142 words}
+\par From the computational results, there appears to be a Stark shift occurring in the ground state spectra which is nearly symmetric with respect to inversion of applied field orientation in the case of the symmetric stretch. This would indicate that polarizability is the dominant factor behind this Stark shift, as only the magnitude of the field influences the change in frequency. Although the asymmetric stretch shows a Stark shift, its low intensity leads us to believe it would not affect the Stark spectrum of DTDCPB as a whole. Furthermore, we found that BOMD could be applied to  cyanide and maintain proper energy conservation in the zero field case. The average bond length determined for this test case was also in agreement with experimental data. After performing BOMD on cyanide in an applied field, we can extend this work to study the entire DTDCPB dimer system with and without applied fields in the ground state, which forms the basis for our continuing work. Being able to computationally model ground and excited state dynamics would allow us to fully simulate the charge transfer events present in this important organic photovoltaic.
 
 %---------------------------------------------------------------------------------------------------------------------------------
 %ACKNOWLEDGEMENTS
