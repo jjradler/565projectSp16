@@ -87,7 +87,7 @@ propanedinitrile} (DTDCPB). DTDCPB is a promising push-pull chromophore prevalen
 
 \par The Stark effect is a phenomenon in which the energy level splittings are altered by the presence of an applied electric field. The effect is measured via changes to vibrational and optical spectra. The key parameters are the change in dipole moment ($\Delta\mu$) dependent on the degree of charge separation for a given transition, and a change in polarizability ($\Delta\alpha$) corresponding to the change in sensitivity of the vibrational transition to the applied field. The interaction of $\Delta\mu$ with an electric field is shown in Figure \ref{fig:stark_shift}a.\cite{boxer} The effect on an isotropic sample produces a broadened spectra (1b) and yields a differential absorbance spectra (1c) which follows the second derivative of the ground state absorption spectrum. Similarly, the effect of $\Delta\alpha$  is shown by Figure 1d-f. We can also model it computationally by performing calculations accounting for the presence of an external field. The change in frequencies is modeled by Equation \ref{equation:Stark} where $V(r_{k})$ is the potential with respect to position $r_{k}$ of electron $k$. \cite{boxer}
 
-\begin{figure}
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=\linewidth]{stark_shift}
 \end{center}
@@ -97,7 +97,7 @@ propanedinitrile} (DTDCPB). DTDCPB is a promising push-pull chromophore prevalen
 
 \begin{equation}
 \begin{split}
-\Delta\omega_{k} = -\Delta\vec{\mu}\cdot \bigg(\frac{\partial V(\vec{r})}{\partial \vec{r}_{k}}\bigg) - \frac{1}{2}\Delta\alpha\cdot \lvert \frac{\partial V(\vec{r})}{\partial \vec{r}_{k}}\bigg \rvert^{2}
+\Delta\omega_{k} = -\Delta\vec{\mu}\cdot \bigg(\frac{\partial V(\vec{r})}{\partial \vec{r}_{k}}\bigg) - \frac{1}{2}\Delta\alpha\cdot \bigg\lvert \frac{\partial V(\vec{r})}{\partial \vec{r}_{k}}\bigg\rvert^{2}
 \label{equation:Stark}
 \end{split}
 \end{equation}
@@ -144,7 +144,7 @@ Since BOMD only calculates the first derivative of the PES, another method is ne
 
 \par All \emph{ab initio} calculations performed in this work used the B3LYP/6-311G(d,p) level of theory. The static field was chosen rather than an oscillating field to simulate the local environment around each DTDCPB dimer immediately after another nearby dimer was stimulated into a charge transfer state. The standard frequency calculations for the ground state of DTDCPB both with and without an applied static field were performed to determine the equilibrium geometries in the various environments and generate IR spectra. The field was generated from a static dipole oriented along the $z$-axis normal to the plane in which the majority of the DTDCPB molecule was embedded. 
 
-\begin{figure}
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=\linewidth]{BOMD_flowchart}
 \end{center}
@@ -162,7 +162,7 @@ Since BOMD only calculates the first derivative of the PES, another method is ne
 
 Two nitrile stretching frequencies were detected through the calculation, which will be referred to as the ``symmetric'' and ``asymmetric'' stretches. Their frequencies were 2356.48 and 2334.28 cm$^{-1}$, respectively. Figure \ref{fig:CNstretch} shows the displacement vectors of both stretching frequencies, where in the symmetric stretch both nitrogens stretch in unison and in the asymmetric stretch the nitrogens move in opposition to one another. 
 
-\begin{figure}
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.5\textwidth]{dtdcpb_groundstate_CNstretch}
 \end{center}
@@ -170,7 +170,7 @@ Two nitrile stretching frequencies were detected through the calculation, which 
 \label{fig:CNstretch}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.5\textwidth]{IRspec}
 \end{center}
@@ -198,7 +198,7 @@ The frequencies of both stretches in the presence of a static field are presente
 \end{table}
 
 
-\begin{figure}
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.5\textwidth]{CN_BOMD}
 \end{center}
@@ -208,7 +208,7 @@ The frequencies of both stretches in the presence of a static field are presente
 
 BOMD for a cyanide group was executed as per the Methodology with success. Figure \ref{fig:CN_BOMD} shows the cyanide group at various bond lengths along its trajectory of vibration. The average bond length along the trajectory was determined to be 1.189 \AA, which is in fair agreement to experimental data for hydrogen cyanide that has bond length of 1.156 \AA. To determine if the BOMD process was executed correctly, the energy of the system was monitored as a function of time, as shown in Figure \ref{fig:energies}. Total energy is conserved and kinetic and potential energy oscillate as one would expect for this two particle system.
 
-\begin{figure}
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.5\textwidth]{BOMD_energies}
 \end{center}
@@ -234,6 +234,7 @@ BOMD for a cyanide group was executed as per the Methodology with success. Figur
 %---------------------------------------------------------------------------------------------------------------------------------
 %ACKNOWLEDGEMENTS
 %---------------------------------------------------------------------------------------------------------------------------------
+\pagebreak
 
 \begin{acknowledgement}
 
