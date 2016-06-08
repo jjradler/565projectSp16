@@ -34,7 +34,8 @@ The structure of the DTDCPB chromophore under investigation in this work.
 
 \begin{abstract}
 We have modeled the effect of external electric fields on nitrile vibrational signatures of \emph{2-[(7-4-[N,N-Bis(4-methylphenyl)amino]phenyl-2,1,3-
-benzothiadiazol-4-yl)methylene]propanedinitrile} (DTDCPB). DTDCPB is a promising push-pull chromophore prevalent in organic photovoltaic research. By applying static electric fields \emph{in silico} and simulating ground state IR spectra, we determined the Stark tuning rate of DTDCPB nitrile stretching to be FILLINTHEBLANK.  Born-Oppenheimer molecular dynamics was used to derive the model IR spectra to correlate to experimental data. In hopes of modeling pump-probe transient IR studies of DTDCPB, computational studies of excited-state dynamics are underway.  These studies will enable \emph{in operando} monitoring of electric fields of organic photovoltaic devices. 
+benzothiadiazol-4-yl)methylene]
+propanedinitrile} (DTDCPB). DTDCPB is a promising push-pull chromophore prevalent in organic photovoltaic research. By applying static electric fields \emph{in silico} and simulating ground state IR spectra, we can calibrate the shifts with local electric fields.  Born-Oppenheimer molecular dynamics was used to derive the model IR spectra to correlate to experimental data. In hopes of modeling pump-probe transient IR studies of DTDCPB, computational studies of excited-state dynamics are underway.  These studies will enable \emph{in operando} monitoring of electric fields of organic photovoltaic devices. 
 \end{abstract}
 
 %---------------------------------------------------------------------------------------------------------------------------------
@@ -51,10 +52,10 @@ benzothiadiazol-4-yl)methylene]propanedinitrile} (DTDCPB). DTDCPB is a promising
  is  2-[(7-4-[N,N-Bis(4-methylphenyl)amino]phenyl-2,1,3-benzothiadiazol-4-yl)methylene]
  propanedinitrile (DTDCPB) and has resulted in OPVs with power conversion effiencies of up to 9.6\%.  
  The nitrile groups present in the molecule can act as reporter moieties for vibrational spectroscopy. 
- By modeling the effect of an applied electric field on absorption spectrum (Stark Effect), it is 
+ By modeling the effect of an applied electric field on absorption spectra (Stark Effect), it is 
  possible to probe the local electric field during charge transfer events in a 
  photovoltaic device via excited state IR spectroscopy. This first requires a thorough understanding 
- of the electric field dependence of the groundand excited state IR spectra.
+ of the electric field dependence of the ground and excited state IR spectra.
  
 Understanding the mechanisms
 of charge transfer events enables rational design and enhancement of current materials 
@@ -85,7 +86,7 @@ Scaling the frequencies $\{\omega_{k}\}$ by the intensity $A_{\tilde{\nu}}(q_{k}
 % explanation of the Stark effect and how we model it 
 \subsection{The Stark Effect}
 
-\par The Stark effect is a phenomenon in which the energy level splittings are increased in the presence of an applied electric field. The effect is measured via changes to the vibrational and optical spectra of a species \textbf{(Figure?)}. We can also model it computationally by performing calculations accounting for the presence of an external field. The observables are a change in dipole moment ($\Delta\mu$) dependent on the degree of charge separation for a given transition and a change in polarizability ($\Delta\alpha$) corresponding to the change in sensitivity of the vibrational transition to the applied field. The change in frequencies is modeled in Equation \ref{equation:Stark} where $V(r_{k})$ is the potential with respect to position $r_{k}$ of electron $k$.
+\par The Stark effect is a phenomenon in which the energy level splittings are altereded by the presence of an applied electric field. The effect is measured via changes to the vibrational and optical spectra of a species \textbf{(Figure?)}. We can also model it computationally by performing calculations accounting for the presence of an external field. The observables are a change in dipole moment ($\Delta\mu$) dependent on the degree of charge separation for a given transition and a change in polarizability ($\Delta\alpha$) corresponding to the change in sensitivity of the vibrational transition to the applied field. The change in frequencies is modeled in Equation \ref{equation:Stark} where $V(r_{k})$ is the potential with respect to position $r_{k}$ of electron $k$.
 
 \begin{equation}
 \begin{split}
@@ -144,6 +145,8 @@ Plotting the function $\mathcal{A}(\omega)$ along the frequency domain yields a 
 %---------------------------------------------------------------------------------------------------------------------------------
 
 \section{Computational Results}
+\par We should maybe report our electric field strengths to be in the units of MV/cm. 0.5V/A=50 MV/cm 0.25MV/cm=25MV/cm.
+We can also say that these fields strengths are appromiately the field strengths involved in H-bonding and dipole-dipole interactions respectively. 
 
 
 %---------------------------------------------------------------------------------------------------------------------------------
