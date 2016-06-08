@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.17)  8 JUN 2016 15:14
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.17)  8 JUN 2016 15:33
 entering extended mode
 **ReportSp16.tex
 (C:\Users\Emily\Documents\UW\565projectSp16\ReportSp16.tex
@@ -339,4 +339,225 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen141
 \extrarowheight=\dimen142
 \NC@list=\toks32
-\e
+\extratabsurround=\skip56
+\backup@length=\skip57
+)
+(C:\Users\Emily\Documents\UW\565projectSp16\ReportSp16.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(54.91382pt, 504.46736pt, 54.91382pt)
+* v-part:(T,H,B)=(36.13498pt, 711.03438pt, 47.80063pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=504.46736pt
+* \textheight=711.03438pt
+* \oddsidemargin=-17.35617pt
+* \evensidemargin=-17.35617pt
+* \topmargin=-73.13501pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=23.04674pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumntrue
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count122
+\scratchdimen=\dimen143
+\scratchbox=\box32
+\nofMPsegments=\count123
+\nofMParguments=\count124
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count125
+\MPscratchDim=\dimen144
+\MPnumerator=\count126
+\makeMPintoPDFobject=\count127
+\everyMPtoPDFconversion=\toks34
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 28.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 28.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 41--44
+\OT1/cmr/m/it/12 [(7-4-[N,N-Bis(4-methylphenyl)amino]phenyl-
+ []
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 41--44
+\OT1/cmr/m/n/12 push-pull chro-mophore preva-lent in or-ganic
+ []
+
+<Images/dtdcpb_dimer.png, id=1, 5248.60875pt x 3003.22pt>
+File: Images/dtdcpb_dimer.png Graphic file (type png)
+
+<use Images/dtdcpb_dimer.png>
+Package pdftex.def Info: Images/dtdcpb_dimer.png used on input line 44.
+(pdftex.def)             Requested size: 144.54pt x 82.66899pt.
+
+Underfull \vbox (badness 10000) detected at line 44
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--64
+\OT1/cmr/m/n/12 [(7-4-[N,N-Bis(4-methylphenyl)amino]phenyl-
+ []
+
+
+Underfull \hbox (badness 3417) in paragraph at lines 52--64
+\OT1/cmr/m/n/12 Sub-se-quently, Born-Oppenheimer Molec-u-lar
+ []
+
+[1{C:/Users/Emily/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+
+ <C:/Users/Emily/Documents/UW/565projectSp16/Images/dtdcpb_dimer.png>]
+<Images/stark_shift.png, id=16, 307.8702pt x 267.8808pt>
+File: Images/stark_shift.png Graphic file (type png)
+
+<use Images/stark_shift.png>
+Package pdftex.def Info: Images/stark_shift.png used on input line 92.
+(pdftex.def)             Requested size: 240.71031pt x 209.44894pt.
+ [2 <C:/Users/Emily/Documents/UW/565projectSp16/Images/stark_shift.png>]
+Underfull \hbox (badness 1668) in paragraph at lines 127--127
+[]\OT1/cmr/bx/n/14.4 Obtaining Spec-tra from Dipole
+ []
+
+<Images/BOMD_flowchart.png, id=24, 652.839pt x 404.712pt>
+File: Images/BOMD_flowchart.png Graphic file (type png)
+
+<use Images/BOMD_flowchart.png>
+Package pdftex.def Info: Images/BOMD_flowchart.png used on input line 150.
+(pdftex.def)             Requested size: 240.71031pt x 149.22235pt.
+
+Underfull \hbox (badness 1168) in paragraph at lines 164--165
+\OT1/cmr/m/n/12 Two ni-trile stretch-ing fre-quen-cies were de-
+ []
+
+[3 <C:/Users/Emily/Documents/UW/565projectSp16/Images/BOMD_flowchart.png>]
+<Images/dtdcpb_groundstate_CNstretch.png, id=30, 2427.0675pt x 1598.97375pt>
+File: Images/dtdcpb_groundstate_CNstretch.png Graphic file (type png)
+
+<use Images/dtdcpb_groundstate_CNstretch.png>
+Package pdftex.def Info: Images/dtdcpb_groundstate_CNstretch.png used on input 
+line 168.
+(pdftex.def)             Requested size: 252.23367pt x 166.15271pt.
+
+Overfull \hbox (11.52336pt too wide) in paragraph at lines 168--169
+ [] 
+ []
+
+<Images/IRspec.png, id=31, 629.79951pt x 481.96875pt>
+File: Images/IRspec.png Graphic file (type png)
+ <use Images/IRspec.png>
+Package pdftex.def Info: Images/IRspec.png used on input line 176.
+(pdftex.def)             Requested size: 252.23367pt x 193.02676pt.
+
+Overfull \hbox (11.52336pt too wide) in paragraph at lines 176--177
+ [] 
+ []
+
+
+Overfull \hbox (0.68619pt too wide) in paragraph at lines 190--191
+ []|\OT1/cmr/bx/n/12 Asymmetric 
+ []
+
+
+Overfull \hbox (10.28531pt too wide) in paragraph at lines 188--199
+ [][] 
+ []
+
+[4 <C:/Users/Emily/Documents/UW/565projectSp16/Images/dtdcpb_groundstate_CNstre
+tch.png (PNG copy)> <C:/Users/Emily/Documents/UW/565projectSp16/Images/IRspec.p
+ng (PNG copy)>] (C:\Users\Emily\Documents\UW\565projectSp16\ReportSp16.bbl
+Underfull \hbox (badness 5022) in paragraph at lines 25--42
+\OT1/cmr/m/n/12 Djurovich, P. I.; Thomp-son, M. E.;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--52
+[]\OT1/cmr/m/n/12 Frisch, M. J.; Trucks, G. W.;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--52
+\OT1/cmr/m/n/12 Schlegel, H. B.; Scuse-ria, G. E.;
+ []
+
+
+Underfull \hbox (badness 2359) in paragraph at lines 43--52
+\OT1/cmr/m/n/12 mani, G.; Barone, V.; Men-nucci, B.;
+ []
+
+
+Underfull \hbox (badness 3679) in paragraph at lines 53--60
+[]\OT1/cmr/m/n/12 Thomas, M.; Brehm, M.; Fligg, R.;
+ []
+
+) [5
+
+] (C:\Users\Emily\Documents\UW\565projectSp16\ReportSp16.aux) ) 
+Here is how much of TeX's memory you used:
+ 5962 strings out of 493921
+ 89367 string characters out of 3147282
+ 162704 words of memory out of 3000000
+ 9125 multiletter control sequences out of 15000+200000
+ 15824 words of font info for 60 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 60i,19n,94p,1140b,486s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on ReportSp16.pdf (5 pages, 2456016 bytes).
+PDF statistics:
+ 75 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+
