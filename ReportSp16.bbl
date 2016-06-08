@@ -2,7 +2,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{4}
+\begin{mcitethebibliography}{5}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -20,16 +20,6 @@
   {\relax}
   {\relax}
 
-\bibitem[Griffith \latin{et~al.}(2015)Griffith, Liu, Amonoo, Djurovich,
-  Thompson, Green, and Forrest]{griffith}
-Griffith,~O.~L.; Liu,~X.; Amonoo,~J.~A.; Djurovich,~P.~I.; Thompson,~M.~E.;
-  Green,~P.~F.; Forrest,~S.~R. Charge transport and exciton dissociation in
-  organic solar cells consisting of dipolar donors mixed with C$_{70}$.
-  \emph{Physical Review B} \textbf{2015}, \relax
-\mciteBstWouldAddEndPunctfalse
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
 \bibitem[Frisch \latin{et~al.}()Frisch, Trucks, Schlegel, Scuseria, Robb,
   Cheeseman, Scalmani, Barone, Mennucci, Petersson, Nakatsuji, Caricato, Li,
   Hratchian, Izmaylov, Bloino, Zheng, Sonnenberg, Hada, Ehara, Toyota, Fukuda,
@@ -44,6 +34,24 @@ Frisch,~M.~J.; Trucks,~G.~W.; Schlegel,~H.~B.; Scuseria,~G.~E.; Robb,~M.~A.;
   Cheeseman,~J.~R.; Scalmani,~G.; Barone,~V.; Mennucci,~B.; Petersson,~G.~A.
   \latin{et~al.}  Gaussian09 {R}evision {E}.01. Gaussian Inc. Wallingford CT
   2009\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Griffith \latin{et~al.}(2015)Griffith, Liu, Amonoo, Djurovich,
+  Thompson, Green, and Forrest]{griffith}
+Griffith,~O.~L.; Liu,~X.; Amonoo,~J.~A.; Djurovich,~P.~I.; Thompson,~M.~E.;
+  Green,~P.~F.; Forrest,~S.~R. Charge transport and exciton dissociation in
+  organic solar cells consisting of dipolar donors mixed with C$_{70}$.
+  \emph{Physical Review B} \textbf{2015}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Bublitz and Boxer(1997)Bublitz, and Boxer]{boxer}
+Bublitz,~G.~U.; Boxer,~S.~G. Stark Spectroscopy: Applications in Chemistry,
+  Biology, and Materials Science. \emph{Annu. Rev. Phys. Chem.} \textbf{1997},
+  \emph{48}, 213--242\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
