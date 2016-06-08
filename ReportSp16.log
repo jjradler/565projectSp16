@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  8 JUN 2016 12:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  8 JUN 2016 13:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -293,21 +293,60 @@ LaTeX Info: Redefining \] on input line 2666.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/cancel/cancel.sty
 Package: cancel 2013/04/12 v2.2 Cancel math terms
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box30
+)
+\tc@llx=\dimen131
+\tc@lly=\dimen132
+\tc@urx=\dimen133
+\tc@ury=\dimen134
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen135
+\adjbox@Height=\dimen136
+\adjbox@Depth=\dimen137
+\adjbox@Totalheight=\dimen138
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
+\c@checkoddpage=\count120
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box31
+\sift@deathcycles=\count121
+\@vwid@loff=\dimen139
+\@vwid@roff=\dimen140
+))
 (./ReportSp16.aux)
 \openout1 = `ReportSp16.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 \openout3 = `acs-ReportSp16.bib'.
 
 
@@ -350,33 +389,33 @@ Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count120
-\scratchdimen=\dimen131
-\scratchbox=\box30
-\nofMPsegments=\count121
-\nofMParguments=\count122
+\scratchcounter=\count122
+\scratchdimen=\dimen141
+\scratchbox=\box32
+\nofMPsegments=\count123
+\nofMParguments=\count124
 \everyMPshowfont=\toks32
-\MPscratchCnt=\count123
-\MPscratchDim=\dimen132
-\MPnumerator=\count124
-\makeMPintoPDFobject=\count125
+\MPscratchCnt=\count125
+\MPscratchDim=\dimen142
+\MPnumerator=\count126
+\makeMPintoPDFobject=\count127
 \everyMPtoPDFconversion=\toks33
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 24.
+LaTeX Font Info:    Try loading font information for U+msa on input line 25.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 24.
+LaTeX Font Info:    Try loading font information for U+msb on input line 25.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 39--42
+Underfull \hbox (badness 10000) in paragraph at lines 38--41
 \OT1/cmr/m/it/12 [(7-4-[N,N-Bis(4-methylphenyl)amino]phenyl-
  []
 
 
-Underfull \hbox (badness 1033) in paragraph at lines 39--42
+Underfull \hbox (badness 1033) in paragraph at lines 38--41
 \OT1/cmr/m/n/12 push-pull chro-mophore preva-lent in or-ganic
  []
 
@@ -384,29 +423,24 @@ Underfull \hbox (badness 1033) in paragraph at lines 39--42
 File: Images/dtdcpb_dimer.png Graphic file (type png)
 
 <use Images/dtdcpb_dimer.png>
-Package pdftex.def Info: Images/dtdcpb_dimer.png used on input line 42.
-(pdftex.def)             Requested size: 227.62204pt x 130.23575pt.
+Package pdftex.def Info: Images/dtdcpb_dimer.png used on input line 41.
+(pdftex.def)             Requested size: 144.54pt x 82.66899pt.
 
-Overfull \hbox (83.08205pt too wide) in paragraph at lines 42--42
- [] 
+Underfull \vbox (badness 10000) detected at line 41
  []
 
 
-Overfull \vbox (18.69576pt too high) detected at line 42
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--62
+Underfull \hbox (badness 10000) in paragraph at lines 49--61
 \OT1/cmr/m/n/12 [(7-4-[N,N-Bis(4-methylphenyl)amino]phenyl-
  []
 
 
-Underfull \hbox (badness 1735) in paragraph at lines 63--66
+Underfull \hbox (badness 1735) in paragraph at lines 62--63
 []\OT1/cmr/m/n/12 Understanding the mech-a-nisms of charge
  []
 
 
-Underfull \hbox (badness 1097) in paragraph at lines 63--66
+Underfull \hbox (badness 1097) in paragraph at lines 62--63
 \OT1/cmr/m/n/12 trans-fer events en-ables ra-tio-nal de-sign and
  []
 
@@ -415,26 +449,26 @@ Underfull \hbox (badness 1097) in paragraph at lines 63--66
 
 
  <./Images/dtdcpb_dimer.png>]
-Underfull \hbox (badness 3148) in paragraph at lines 104--105
+Underfull \hbox (badness 3148) in paragraph at lines 101--102
 \OT1/cmr/m/n/12 Oppenheimer ap-prox-i-mate time-\OT1/cmr/m/it/12 independent
  []
 
 [2]
-Underfull \hbox (badness 1668) in paragraph at lines 123--123
+Underfull \hbox (badness 1668) in paragraph at lines 120--120
 []\OT1/cmr/bx/n/14.4 Obtaining Spec-tra from Dipole
  []
 
 
 LaTeX Warning: Reference `figure:BOMDplan' on page 3 undefined on input line 14
-4.
+1.
 
 
-Underfull \hbox (badness 1237) in paragraph at lines 151--153
+Underfull \hbox (badness 1237) in paragraph at lines 148--150
 \OT1/cmr/m/n/12 We should maybe re-port our elec-tric field
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 151--153
+Underfull \hbox (badness 2261) in paragraph at lines 148--150
 \OT1/cmr/m/n/12 strengths to be in the units of MV/cm.
  []
 
@@ -469,12 +503,15 @@ Underfull \hbox (badness 3679) in paragraph at lines 53--60
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 5343 strings out of 493089
- 79773 string characters out of 6134842
- 158385 words of memory out of 5000000
- 8725 multiletter control sequences out of 15000+600000
+ 5870 strings out of 493089
+ 88560 string characters out of 6134842
+ 167539 words of memory out of 5000000
+ 9227 multiletter control sequences out of 15000+600000
  15824 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,19n,94p,958b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -490,7 +527,7 @@ al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local
 l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
 /texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on ReportSp16.pdf (4 pages, 1727220 bytes).
+Output written on ReportSp16.pdf (4 pages, 1727206 bytes).
 PDF statistics:
  68 PDF objects out of 1000 (max. 8388607)
  47 compressed objects within 1 object stream

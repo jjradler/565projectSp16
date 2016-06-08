@@ -8,6 +8,7 @@
 \usepackage{amsmath}
 \usepackage{cancel}
 \usepackage{float}
+\usepackage[export]{adjustbox}
 
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
@@ -27,11 +28,9 @@
 % PRESENTED IN OUR TALK. IT ALSO NEEDS TO BE 100 WORDS OR LESS ACCORDING TO
 %CHEMICAL PHYSICS LETTERS GUIDELINES FOR AUTHORS -- JJR 6/3
 
-\setlength{\fboxrule}{0pt}
+\setlength{\fboxrule}{0pt}	%this gets rid of the box around the TOC graphic
 \begin{tocentry}
-\begin{center}
-\includegraphics[width=8cm]{dtdcpb_dimer}
-\end{center}
+\includegraphics[width=\linewidth]{dtdcpb_dimer}
 The structure of the DTDCPB chromophore dimer under investigation in this work.\cite{g09}
 \end{tocentry}
 
@@ -60,11 +59,9 @@ propanedinitrile} (DTDCPB). DTDCPB is a promising push-pull chromophore prevalen
  photovoltaic device via excited state IR spectroscopy. This first requires a thorough understanding 
  of the electric field dependence of the ground and excited state IR spectra.
  
-Understanding the mechanisms
-of charge transfer events enables rational design and enhancement of current materials 
-for novel, high-efficiency semiconductor and photovoltaic devices. First, frequency calculations determined the equilibrium properties of DTDCPB in \emph{Gaussian 09}. The Stark effect was modeled by frequency calculations in external static electric fields of various magnitudes. Spectral shifts were obtained from these frequency calculations and were correlated to the presence of an electric field. Subsequently, Born-Oppenheimer Molecular Dynamics were used to obtain model spectra using a different set of methods from the standard frequency calculations in \emph{Gaussian 09}. \cite{g09}
+Understanding the mechanisms of charge transfer events enables rational design and enhancement of current materials for novel, high-efficiency semiconductor and photovoltaic devices. First, frequency calculations determined the equilibrium properties of DTDCPB in \emph{Gaussian 09}. The Stark effect was modeled by frequency calculations in external static electric fields of various magnitudes. Spectral shifts were obtained from these frequency calculations and were correlated to the presence of an electric field. Subsequently, Born-Oppenheimer Molecular Dynamics were used to obtain model spectra using a different set of methods from the standard frequency calculations in \emph{Gaussian 09}. \cite{g09}
     
- \textbf{CURRENTLY 250 WORDS}
+ \textbf{CURRENTLY 252 WORDS}
 
 %---------------------------------------------------------------------------------------------------------------------------------
 %THEORY SECTION
@@ -89,7 +86,7 @@ Scaling the frequencies $\{\omega_{k}\}$ by the intensity $A_{\tilde{\nu}}(q_{k}
 % explanation of the Stark effect and how we model it 
 \subsection{The Stark Effect}
 
-\par The Stark effect is a phenomenon in which the energy level splittings are altereded by the presence of an applied electric field. The effect is measured via changes to the vibrational and optical spectra of a species \textbf{(Figure?)}. We can also model it computationally by performing calculations accounting for the presence of an external field. The parameters of interest are the change in dipole moment ($\Delta\mu$) dependent on the degree of charge separation for a given transition and a change in polarizability ($\Delta\alpha$) corresponding to the change in sensitivity of the vibrational transition to the applied field. The change in frequencies is modeled by Equation \ref{equation:Stark} where $V(r_{k})$ is the potential with respect to position $r_{k}$ of electron $k$.
+\par The Stark effect is a phenomenon in which the energy level splittings are altered by the presence of an applied electric field. The effect is measured via changes to the vibrational and optical spectra of a species \textbf{(Figure?)}. We can also model it computationally by performing calculations accounting for the presence of an external field. The parameters of interest are the change in dipole moment ($\Delta\mu$) dependent on the degree of charge separation for a given transition and a change in polarizability ($\Delta\alpha$) corresponding to the change in sensitivity of the vibrational transition to the applied field. The change in frequencies is modeled by Equation \ref{equation:Stark} where $V(r_{k})$ is the potential with respect to position $r_{k}$ of electron $k$.
 
 \begin{equation}
 \begin{split}
@@ -174,7 +171,7 @@ We can also say that these fields strengths are appromiately the field strengths
 
 \begin{acknowledgement}
 
-We would like to thank and acknowledge Professor Xiaosong Li and Professor Cody Schlenker for their support and invaluable feedback.  We would also like to thank the members of the Li Research Group for making themselves available to answer our computational questions and helping us troubleshoot \emph{Gaussian}.  Special thanks go to Dr. Alessio Petrone, Dr. Bo Peng, David Lingerfelt, Patrick Lestrange, and Hongbin Liu for spending their valuable time helping us with this work. Additionally, this work was facilitated though the use of advanced computational, storage, and networking infrastructure provided by the Hyak supercomputer system and funded by the STF at the University of Washington.
+We would like to thank and acknowledge Professor Xiaosong Li and Professor Cody Schlenker for their support and invaluable feedback.  We would also like to thank the members of the Li Research Group for making themselves available to answer our computational questions and helping us troubleshoot our \emph{Gaussian} input files.  Special thanks go to Dr. Alessio Petrone, Dr. Bo Peng, David Lingerfelt, Patrick Lestrange, and Hongbin Liu for spending their valuable time helping us with this work. Additionally, this work was facilitated though the use of advanced computational, storage, and networking infrastructure provided by the Hyak supercomputer system and funded by the STF at the University of Washington.
 
 \end{acknowledgement}
 
