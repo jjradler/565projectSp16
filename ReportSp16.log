@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.17)  8 JUN 2016 15:33
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.19)  8 JUN 2016 15:32
->>>>>>> 13efdf367dae95c2f2e12a9442f2061af6f41429
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.19)  8 JUN 2016 15:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -344,13 +340,9 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \extratabsurround=\skip56
 \backup@length=\skip57
 )
-<<<<<<< HEAD
-(C:\Users\Emily\Documents\UW\565projectSp16\ReportSp16.aux)
-=======
 (./ReportSp16.aux)
 \openout1 = `ReportSp16.aux'.
 
->>>>>>> 13efdf367dae95c2f2e12a9442f2061af6f41429
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
@@ -363,11 +355,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
-<<<<<<< HEAD
-=======
 \openout3 = `acs-ReportSp16.bib'.
 
->>>>>>> 13efdf367dae95c2f2e12a9442f2061af6f41429
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -406,11 +395,7 @@ LaTeX Font Info:    ... okay on input line 28.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-<<<<<<< HEAD
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
-=======
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
->>>>>>> 13efdf367dae95c2f2e12a9442f2061af6f41429
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count122
 \scratchdimen=\dimen143
@@ -425,20 +410,12 @@ Package caption Info: End \AtBeginDocument code.
 \everyMPtoPDFconversion=\toks34
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 28.
-<<<<<<< HEAD
- ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-=======
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
->>>>>>> 13efdf367dae95c2f2e12a9442f2061af6f41429
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 28.
 
-<<<<<<< HEAD
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-=======
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
->>>>>>> 13efdf367dae95c2f2e12a9442f2061af6f41429
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Underfull \hbox (badness 10000) in paragraph at lines 41--44
@@ -470,37 +447,6 @@ Underfull \hbox (badness 3417) in paragraph at lines 52--64
 \OT1/cmr/m/n/12 Sub-se-quently, Born-Oppenheimer Molec-u-lar
  []
 
-<<<<<<< HEAD
-[1{C:/Users/Emily/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
-
-
-
- <C:/Users/Emily/Documents/UW/565projectSp16/Images/dtdcpb_dimer.png>]
-<Images/stark_shift.png, id=16, 307.8702pt x 267.8808pt>
-File: Images/stark_shift.png Graphic file (type png)
-
-<use Images/stark_shift.png>
-Package pdftex.def Info: Images/stark_shift.png used on input line 92.
-(pdftex.def)             Requested size: 240.71031pt x 209.44894pt.
- [2 <C:/Users/Emily/Documents/UW/565projectSp16/Images/stark_shift.png>]
-Underfull \hbox (badness 1668) in paragraph at lines 127--127
-[]\OT1/cmr/bx/n/14.4 Obtaining Spec-tra from Dipole
- []
-
-<Images/BOMD_flowchart.png, id=24, 652.839pt x 404.712pt>
-File: Images/BOMD_flowchart.png Graphic file (type png)
-
-<use Images/BOMD_flowchart.png>
-Package pdftex.def Info: Images/BOMD_flowchart.png used on input line 150.
-(pdftex.def)             Requested size: 240.71031pt x 149.22235pt.
-
-Underfull \hbox (badness 1168) in paragraph at lines 164--165
-\OT1/cmr/m/n/12 Two ni-trile stretch-ing fre-quen-cies were de-
- []
-
-[3 <C:/Users/Emily/Documents/UW/565projectSp16/Images/BOMD_flowchart.png>]
-<Images/dtdcpb_groundstate_CNstretch.png, id=30, 2427.0675pt x 1598.97375pt>
-=======
 [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -510,10 +456,10 @@ Underfull \hbox (badness 1168) in paragraph at lines 164--165
 File: Images/stark_shift.png Graphic file (type png)
 
 <use Images/stark_shift.png>
-Package pdftex.def Info: Images/stark_shift.png used on input line 90.
+Package pdftex.def Info: Images/stark_shift.png used on input line 91.
 (pdftex.def)             Requested size: 240.71031pt x 209.44894pt.
  [2 <./Images/stark_shift.png>]
-Underfull \hbox (badness 1668) in paragraph at lines 125--125
+Underfull \hbox (badness 1668) in paragraph at lines 126--126
 []\OT1/cmr/bx/n/14.4 Obtaining Spec-tra from Dipole
  []
 
@@ -521,159 +467,82 @@ Underfull \hbox (badness 1668) in paragraph at lines 125--125
 File: Images/BOMD_flowchart.png Graphic file (type png)
 
 <use Images/BOMD_flowchart.png>
-Package pdftex.def Info: Images/BOMD_flowchart.png used on input line 147.
+Package pdftex.def Info: Images/BOMD_flowchart.png used on input line 148.
 (pdftex.def)             Requested size: 240.71031pt x 149.22235pt.
 
-Underfull \hbox (badness 1168) in paragraph at lines 161--162
+Underfull \hbox (badness 1168) in paragraph at lines 162--163
 \OT1/cmr/m/n/12 Two ni-trile stretch-ing fre-quen-cies were de-
  []
 
 <Images/dtdcpb_groundstate_CNstretch.png, id=26, 2427.0675pt x 1598.97375pt>
->>>>>>> 13efdf367dae95c2f2e12a9442f2061af6f41429
 File: Images/dtdcpb_groundstate_CNstretch.png Graphic file (type png)
 
 <use Images/dtdcpb_groundstate_CNstretch.png>
 Package pdftex.def Info: Images/dtdcpb_groundstate_CNstretch.png used on input 
-<<<<<<< HEAD
-line 168.
+line 166.
 (pdftex.def)             Requested size: 252.23367pt x 166.15271pt.
 
-Overfull \hbox (11.52336pt too wide) in paragraph at lines 168--169
- [] 
- []
-
-<Images/IRspec.png, id=31, 629.79951pt x 481.96875pt>
-File: Images/IRspec.png Graphic file (type png)
- <use Images/IRspec.png>
-Package pdftex.def Info: Images/IRspec.png used on input line 176.
-(pdftex.def)             Requested size: 252.23367pt x 193.02676pt.
-
-Overfull \hbox (11.52336pt too wide) in paragraph at lines 176--177
- [] 
- []
-
-
-Overfull \hbox (0.68619pt too wide) in paragraph at lines 190--191
-=======
-line 165.
-(pdftex.def)             Requested size: 252.23367pt x 166.15271pt.
-
-Overfull \hbox (11.52336pt too wide) in paragraph at lines 165--166
+Overfull \hbox (11.52336pt too wide) in paragraph at lines 166--167
  [] 
  []
 
 <Images/IRspec.png, id=27, 629.79951pt x 481.96875pt>
 File: Images/IRspec.png Graphic file (type png)
  <use Images/IRspec.png>
-Package pdftex.def Info: Images/IRspec.png used on input line 173.
+Package pdftex.def Info: Images/IRspec.png used on input line 174.
 (pdftex.def)             Requested size: 252.23367pt x 193.02676pt.
 
-Overfull \hbox (11.52336pt too wide) in paragraph at lines 173--174
+Overfull \hbox (11.52336pt too wide) in paragraph at lines 174--175
  [] 
  []
 
 [3 <./Images/BOMD_flowchart.png>]
-Overfull \hbox (0.68619pt too wide) in paragraph at lines 187--188
->>>>>>> 13efdf367dae95c2f2e12a9442f2061af6f41429
+Overfull \hbox (0.68619pt too wide) in paragraph at lines 188--189
  []|\OT1/cmr/bx/n/12 Asymmetric 
  []
 
 
-<<<<<<< HEAD
-Overfull \hbox (10.28531pt too wide) in paragraph at lines 188--199
- [][] 
- []
-
-[4 <C:/Users/Emily/Documents/UW/565projectSp16/Images/dtdcpb_groundstate_CNstre
-tch.png (PNG copy)> <C:/Users/Emily/Documents/UW/565projectSp16/Images/IRspec.p
-ng (PNG copy)>] (C:\Users\Emily\Documents\UW\565projectSp16\ReportSp16.bbl
-Underfull \hbox (badness 5022) in paragraph at lines 25--42
-\OT1/cmr/m/n/12 Djurovich, P. I.; Thomp-son, M. E.;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--52
-=======
-Overfull \hbox (10.28531pt too wide) in paragraph at lines 185--196
+Overfull \hbox (10.28531pt too wide) in paragraph at lines 186--197
  [][] 
  []
 
 [4 <./Images/dtdcpb_groundstate_CNstretch.png (PNG copy)> <./Images/IRspec.png 
 (PNG copy)>] (./ReportSp16.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 33--42
->>>>>>> 13efdf367dae95c2f2e12a9442f2061af6f41429
 []\OT1/cmr/m/n/12 Frisch, M. J.; Trucks, G. W.;
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 43--52
-=======
 Underfull \hbox (badness 10000) in paragraph at lines 33--42
->>>>>>> 13efdf367dae95c2f2e12a9442f2061af6f41429
 \OT1/cmr/m/n/12 Schlegel, H. B.; Scuse-ria, G. E.;
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 2359) in paragraph at lines 43--52
-=======
 Underfull \hbox (badness 2359) in paragraph at lines 33--42
->>>>>>> 13efdf367dae95c2f2e12a9442f2061af6f41429
 \OT1/cmr/m/n/12 mani, G.; Barone, V.; Men-nucci, B.;
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 3679) in paragraph at lines 53--60
-=======
 Underfull \hbox (badness 5022) in paragraph at lines 43--51
 \OT1/cmr/m/n/12 Djurovich, P. I.; Thomp-son, M. E.;
  []
 
 
 Underfull \hbox (badness 3679) in paragraph at lines 61--68
->>>>>>> 13efdf367dae95c2f2e12a9442f2061af6f41429
 []\OT1/cmr/m/n/12 Thomas, M.; Brehm, M.; Fligg, R.;
  []
 
 ) [5
 
-<<<<<<< HEAD
-] (C:\Users\Emily\Documents\UW\565projectSp16\ReportSp16.aux) ) 
-Here is how much of TeX's memory you used:
- 5962 strings out of 493921
- 89367 string characters out of 3147282
- 162704 words of memory out of 3000000
- 9125 multiletter control sequences out of 15000+200000
- 15824 words of font info for 60 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 60i,19n,94p,1140b,486s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on ReportSp16.pdf (5 pages, 2456016 bytes).
-PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
-=======
 ] (./ReportSp16.aux) ) 
 Here is how much of TeX's memory you used:
  5975 strings out of 493027
  90242 string characters out of 6134069
- 169229 words of memory out of 5000000
+ 170229 words of memory out of 5000000
  9383 multiletter control sequences out of 15000+600000
  15824 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,19n,94p,912b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,19n,94p,1177b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsf
@@ -687,11 +556,10 @@ sbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
 2.pfb>
-Output written on ReportSp16.pdf (5 pages, 2444321 bytes).
+Output written on ReportSp16.pdf (5 pages, 2444545 bytes).
 PDF statistics:
  77 PDF objects out of 1000 (max. 8388607)
  49 compressed objects within 1 object stream
->>>>>>> 13efdf367dae95c2f2e12a9442f2061af6f41429
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
