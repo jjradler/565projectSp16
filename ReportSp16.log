@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  8 JUN 2016 13:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  8 JUN 2016 14:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -332,21 +332,29 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@loff=\dimen139
 \@vwid@roff=\dimen140
 ))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen141
+\extrarowheight=\dimen142
+\NC@list=\toks32
+\extratabsurround=\skip56
+\backup@length=\skip57
+)
 (./ReportSp16.aux)
 \openout1 = `ReportSp16.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 \openout3 = `acs-ReportSp16.bib'.
 
 
@@ -390,32 +398,32 @@ Package caption Info: End \AtBeginDocument code.
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count122
-\scratchdimen=\dimen141
+\scratchdimen=\dimen143
 \scratchbox=\box32
 \nofMPsegments=\count123
 \nofMParguments=\count124
-\everyMPshowfont=\toks32
+\everyMPshowfont=\toks33
 \MPscratchCnt=\count125
-\MPscratchDim=\dimen142
+\MPscratchDim=\dimen144
 \MPnumerator=\count126
 \makeMPintoPDFobject=\count127
-\everyMPtoPDFconversion=\toks33
+\everyMPtoPDFconversion=\toks34
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 25.
+LaTeX Font Info:    Try loading font information for U+msa on input line 28.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 25.
+LaTeX Font Info:    Try loading font information for U+msb on input line 28.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 38--41
+Underfull \hbox (badness 10000) in paragraph at lines 41--44
 \OT1/cmr/m/it/12 [(7-4-[N,N-Bis(4-methylphenyl)amino]phenyl-
  []
 
 
-Underfull \hbox (badness 1033) in paragraph at lines 38--41
+Underfull \hbox (badness 1033) in paragraph at lines 41--44
 \OT1/cmr/m/n/12 push-pull chro-mophore preva-lent in or-ganic
  []
 
@@ -423,24 +431,24 @@ Underfull \hbox (badness 1033) in paragraph at lines 38--41
 File: Images/dtdcpb_dimer.png Graphic file (type png)
 
 <use Images/dtdcpb_dimer.png>
-Package pdftex.def Info: Images/dtdcpb_dimer.png used on input line 41.
+Package pdftex.def Info: Images/dtdcpb_dimer.png used on input line 44.
 (pdftex.def)             Requested size: 144.54pt x 82.66899pt.
 
-Underfull \vbox (badness 10000) detected at line 41
+Underfull \vbox (badness 10000) detected at line 44
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--61
+Underfull \hbox (badness 10000) in paragraph at lines 52--64
 \OT1/cmr/m/n/12 [(7-4-[N,N-Bis(4-methylphenyl)amino]phenyl-
  []
 
 
-Underfull \hbox (badness 1735) in paragraph at lines 62--63
+Underfull \hbox (badness 1735) in paragraph at lines 65--66
 []\OT1/cmr/m/n/12 Understanding the mech-a-nisms of charge
  []
 
 
-Underfull \hbox (badness 1097) in paragraph at lines 62--63
+Underfull \hbox (badness 1097) in paragraph at lines 65--66
 \OT1/cmr/m/n/12 trans-fer events en-ables ra-tio-nal de-sign and
  []
 
@@ -449,30 +457,63 @@ Underfull \hbox (badness 1097) in paragraph at lines 62--63
 
 
  <./Images/dtdcpb_dimer.png>]
-Underfull \hbox (badness 3148) in paragraph at lines 101--102
-\OT1/cmr/m/n/12 Oppenheimer ap-prox-i-mate time-\OT1/cmr/m/it/12 independent
- []
+<Images/stark_shift.png, id=17, 307.8702pt x 267.8808pt>
+File: Images/stark_shift.png Graphic file (type png)
 
-[2]
-Underfull \hbox (badness 1668) in paragraph at lines 120--120
+<use Images/stark_shift.png>
+Package pdftex.def Info: Images/stark_shift.png used on input line 94.
+(pdftex.def)             Requested size: 240.71031pt x 209.44894pt.
+ [2 <./Images/stark_shift.png>]
+Underfull \hbox (badness 1668) in paragraph at lines 129--129
 []\OT1/cmr/bx/n/14.4 Obtaining Spec-tra from Dipole
  []
 
+<Images/BOMD_flowchart.png, id=25, 652.839pt x 404.712pt>
+File: Images/BOMD_flowchart.png Graphic file (type png)
 
-LaTeX Warning: Reference `figure:BOMDplan' on page 3 undefined on input line 14
-1.
+<use Images/BOMD_flowchart.png>
+Package pdftex.def Info: Images/BOMD_flowchart.png used on input line 152.
+(pdftex.def)             Requested size: 240.71031pt x 149.22235pt.
 
+Underfull \hbox (badness 1168) in paragraph at lines 166--167
+\OT1/cmr/m/n/12 Two ni-trile stretch-ing fre-quen-cies were de-
+ []
 
-Underfull \hbox (badness 1237) in paragraph at lines 148--150
-\OT1/cmr/m/n/12 We should maybe re-port our elec-tric field
+[3 <./Images/BOMD_flowchart.png>]
+<Images/dtdcpb_groundstate_CNstretch.png, id=31, 2427.0675pt x 1598.97375pt>
+File: Images/dtdcpb_groundstate_CNstretch.png Graphic file (type png)
+
+<use Images/dtdcpb_groundstate_CNstretch.png>
+Package pdftex.def Info: Images/dtdcpb_groundstate_CNstretch.png used on input 
+line 170.
+(pdftex.def)             Requested size: 252.23367pt x 166.15271pt.
+
+Overfull \hbox (11.52336pt too wide) in paragraph at lines 170--171
+ [] 
+ []
+
+<Images/IRspec.png, id=32, 629.79951pt x 481.96875pt>
+File: Images/IRspec.png Graphic file (type png)
+ <use Images/IRspec.png>
+Package pdftex.def Info: Images/IRspec.png used on input line 178.
+(pdftex.def)             Requested size: 252.23367pt x 193.02676pt.
+
+Overfull \hbox (11.52336pt too wide) in paragraph at lines 178--179
+ [] 
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 148--150
-\OT1/cmr/m/n/12 strengths to be in the units of MV/cm.
+Overfull \hbox (0.68619pt too wide) in paragraph at lines 192--193
+ []|\OT1/cmr/bx/n/12 Asymmetric 
  []
 
-[3] (./ReportSp16.bbl
+
+Overfull \hbox (10.28531pt too wide) in paragraph at lines 190--201
+ [][] 
+ []
+
+[4 <./Images/dtdcpb_groundstate_CNstretch.png (PNG copy)> <./Images/IRspec.png 
+(PNG copy)>] (./ReportSp16.bbl
 Underfull \hbox (badness 5022) in paragraph at lines 25--42
 \OT1/cmr/m/n/12 Djurovich, P. I.; Thomp-son, M. E.;
  []
@@ -497,40 +538,34 @@ Underfull \hbox (badness 3679) in paragraph at lines 53--60
 []\OT1/cmr/m/n/12 Thomas, M.; Brehm, M.; Fligg, R.;
  []
 
-) [4
+) [5
 
-] (./ReportSp16.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] (./ReportSp16.aux) ) 
 Here is how much of TeX's memory you used:
- 5870 strings out of 493089
- 88560 string characters out of 6134842
- 167539 words of memory out of 5000000
- 9227 multiletter control sequences out of 15000+600000
+ 5946 strings out of 493089
+ 89862 string characters out of 6134842
+ 167290 words of memory out of 5000000
+ 9296 multiletter control sequences out of 15000+600000
  15824 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,19n,94p,958b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on ReportSp16.pdf (4 pages, 1727206 bytes).
+ 60i,19n,94p,948b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmss12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mss8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+sbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
+2.pfb>
+Output written on ReportSp16.pdf (5 pages, 2445450 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+ 77 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -15,7 +15,7 @@
 
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
-\title{Stark Shifts in Simulated Excited State Vibrational Spectra}
+\title{Stark Shifts in Simulated Vibrational Spectra}
 \author{J. J. Radler}
 \email{jjradler@uw.edu}
 \author{E. Rabe}
@@ -66,7 +66,7 @@ propanedinitrile} (DTDCPB). DTDCPB is a promising push-pull chromophore prevalen
  
 Understanding the mechanisms of charge transfer events enables rational design and enhancement of current materials for novel, high-efficiency semiconductor and photovoltaic devices. First, frequency calculations determined the equilibrium properties of DTDCPB in \emph{Gaussian 09}. The Stark effect was modeled by frequency calculations in external static electric fields of various magnitudes. Spectral shifts were obtained from these frequency calculations and were correlated to the presence of an electric field. Subsequently, Born-Oppenheimer Molecular Dynamics were used to obtain model spectra using a different set of methods from the standard frequency calculations in \emph{Gaussian 09}. \cite{g09}
     
- \textbf{CURRENTLY 252 WORDS}
+ \textbf{CURRENTLY 250 WORDS}
 
 %---------------------------------------------------------------------------------------------------------------------------------
 %THEORY SECTION
@@ -76,7 +76,7 @@ Understanding the mechanisms of charge transfer events enables rational design a
 % brief overview of 
 \subsection{Standard Frequency Calculations}
 
-\par The \emph{normal modes of vibration} are calculated by diagonalizing a matrix of the second spatial derivatives of the electronic potential energy surface (PES) for the system of $N$ atoms. Diagonalization of the Hessian matrix yields the orthogonal set of $N$ frequency normal modes $\{\omega_k\}$.  The eigenvalues of this Hessian correspond to the normal modes of vibration for the system. Additionally, the anharmonicity tensor $A$ is defined by the third spatial derivative of the PES and may be used for simulating Raman spectra.  To obtain the intensities of the transitions the vibrational intensities are given by (Equation \ref{equation:intensity}).  The dipole moment $\mu$ is obtained from the instantaneous electron density around the nuclei.  
+\par The \emph{normal modes of vibration} are calculated by diagonalizing a matrix of the second spatial derivatives of the electronic potential energy surface (PES) for the system of $N$ atoms to yield the orthogonal set of $N$ frequency normal modes $\{\omega_k\}$.  The eigenvalues correspond to the normal modes of vibration for the system. The dipole moment $\mu$ is obtained from the instantaneous electron density around the nuclei. The intensities are derived from the spatial derivative of the dipole moment (Equation \ref{equation:intensity}).  
 
 \begin{equation}
 \begin{split}
@@ -86,12 +86,18 @@ Understanding the mechanisms of charge transfer events enables rational design a
 \end{split}
 \end{equation}
 
-Scaling the frequencies $\{\omega_{k}\}$ by the intensity $A_{\tilde{\nu}}(q_{k})$ a simulated vibrational spectrum for the molecule.
-
 % explanation of the Stark effect and how we model it 
 \subsection{The Stark Effect}
 
-\par The Stark effect is a phenomenon in which the energy level splittings are altered by the presence of an applied electric field. The effect is measured via changes to the vibrational and optical spectra of a species \textbf{(Figure?)}. We can also model it computationally by performing calculations accounting for the presence of an external field. The parameters of interest are the change in dipole moment ($\Delta\mu$) dependent on the degree of charge separation for a given transition and a change in polarizability ($\Delta\alpha$) corresponding to the change in sensitivity of the vibrational transition to the applied field. The change in frequencies is modeled by Equation \ref{equation:Stark} where $V(r_{k})$ is the potential with respect to position $r_{k}$ of electron $k$.
+\par The Stark effect is a phenomenon in which the energy level splittings are altered by the presence of an applied electric field. The effect is measured via changes to the vibrational and optical spectra of a species. The effect is illustrated in Figure \ref{fig:stark_shift}. We can also model it computationally by performing calculations accounting for the presence of an external field. The parameters of interest are the change in dipole moment ($\Delta\mu$) dependent on the degree of charge separation for a given transition and a change in polarizability ($\Delta\alpha$) corresponding to the change in sensitivity of the vibrational transition to the applied field. The change in frequencies is modeled by Equation \ref{equation:Stark} where $V(r_{k})$ is the potential with respect to position $r_{k}$ of electron $k$.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\linewidth]{stark_shift}
+\end{center}
+\caption{Illustration of the mechanism of the Stark Effect and the corresponding change in observed spectra.}
+\label{fig:stark_shift}
+\end{figure}
 
 \begin{equation}
 \begin{split}
@@ -103,7 +109,7 @@ Scaling the frequencies $\{\omega_{k}\}$ by the intensity $A_{\tilde{\nu}}(q_{k}
 % explanation of BOMD and comparison with standard frequency methods in Gaussian 09
 \subsection{Born-Oppenheimer MD (BOMD)}
 
-\par We apply Born-Oppenheimer Molecular Dynamics (BOMD) to derive the model spectra for DTDCPB with and without the static electric field present. BOMD utilizes Born-Oppenheimer approximate time-\emph{independent} density functional theory (DFT) calculations to compute the electronic potential at each nuclear evolution time step with classical equations of motion (EOMs) integrated by the Velocity Verlet integration method (Equations \ref{equation:Verlet}) approximating the nuclear dynamics. 
+\par We apply Born-Oppenheimer Molecular Dynamics (BOMD) to derive the model spectra for DTDCPB with and without the static electric field present. BOMD utilizes Born-Oppenheimer approximate time-\emph{independent ab initio} calculations to compute the electronic potential at each nuclear evolution time step.  Integrating the classical equations of motion (EOMs) with the Velocity Verlet integration method (Equations \ref{equation:Verlet}) approximates nuclear dynamics. 
 
 \begin{equation}
 \begin{split}
@@ -113,7 +119,7 @@ Scaling the frequencies $\{\omega_{k}\}$ by the intensity $A_{\tilde{\nu}}(q_{k}
 \end{split}
 \end{equation}
 
-In this context, BOMD has advantages over the \emph{ab initio} frequency calculation discussed above. The Stark effect is most readily observed in vibrational spectra, so using purely \emph{ab initio} techniques we require either the second or third derivative of the electronic PES, which can be computationally expensive for larger systems. In contrast, BOMD only requires the gradient of the electronic PES to propagate nuclear position (Equations \ref{equation:Verlet}) and only the electron density to compute the time-dependent dipole moment (Equation \ref{equation:Dipole}). Thus, BOMD manages to capture some  anharmonicity and higher order terms of the potential $V(\vec{r}_{k})$ with only the gradient for each time step.  
+In this context, BOMD has advantages over the \emph{ab initio} frequency calculation. \cite{g09} The Stark effect is most readily observed in vibrational spectra, so using purely \emph{ab initio} techniques requires the second or third derivative of the electronic PES, which can be costly for larger systems. In contrast, BOMD only requires the gradient of the electronic PES to propagate nuclear position (Equations \ref{equation:Verlet}) and only the electron density to compute the time-dependent dipole moment (Equation \ref{equation:Dipole}). Thus, BOMD manages to capture some  anharmonicity and higher order terms of the potential $V(\vec{r}_{k})$ using only the gradient for each time step.  
 
 \begin{equation}
 \begin{split}
@@ -133,7 +139,7 @@ Since BOMD only calculates the first derivative of the PES, another method is ne
 \end{split}
 \end{equation}
 
-Plotting the function $\mathcal{A}(\omega)$ along the frequency domain yields a model spectrum.\cite{thomas} (\textbf{518 words})
+Plotting the function $\mathcal{A}(\omega)$ along the frequency domain yields a model spectrum.\cite{thomas} (\textbf{478 words})
 
 %---------------------------------------------------------------------------------------------------------------------------------
 %METHODS SECTION
@@ -141,9 +147,17 @@ Plotting the function $\mathcal{A}(\omega)$ along the frequency domain yields a 
 
 \section{Methodology}
 
-\par All \emph{ab initio} calculations performed in this work used the B3LYP/6-311G(d,p) level of theory. The static field was chosen rather than an oscillating field to simulate the local environment around each DTDCPB dimer immediately after another nearby dimer was stimulated into a charge transfer state. First, the standard frequency calculations for the ground state of DTDCPB both with and without an applied static field were performed to determine the equilibrium geometries in the various environments and generate IR spectra. The Stark effect was modeled by applying a static dipole oriented along the $z$-axis normal to the plane in which the majority of the DTDCPB molecule was embedded.  The spectra for the equilibrium geometries of the ground state in various field strengths were compared and tabulated to verify that the Stark effect was captured by the model and could be ``calibrated" for field strength. 
+\par All \emph{ab initio} calculations performed in this work used the B3LYP/6-311G(d,p) level of theory. The static field was chosen rather than an oscillating field to simulate the local environment around each DTDCPB dimer immediately after another nearby dimer was stimulated into a charge transfer state. The standard frequency calculations for the ground state of DTDCPB both with and without an applied static field were performed to determine the equilibrium geometries in the various environments and generate IR spectra. The field was generated from a static dipole oriented along the $z$-axis normal to the plane in which the majority of the DTDCPB molecule was embedded. 
 
-\par BOMD was first applied to a cyanide ion as a test case to coarsely model the nitriles on DTDCPB. Subsequently, it was applied to DTDCPB monomer in zero field and also in applied fields. The systems were brought to ideal initial conditions for the ``Production MD'' steps by performing thermal Monte Carlo sampling subject to Boltzmann statistics in the same electric field to generate multiple trajectories for nuclear dynamics with thermally populated vibrational normal modes. Finally, the production MD runs yielded the dipole time series for calculating the spectra. The individual spectra from the multiple production MD runs can be averaged in the frequency domain to obtain a single spectrum from multiple BOMD runs. Our BOMD application scheme follows that outlined in Figure \ref{figure:BOMDplan} (\textbf{274 words})
+\begin{figure}
+\begin{center}
+\includegraphics[width=\linewidth]{BOMD_flowchart}
+\end{center}
+\caption{Diagram of the sequence of calculations for obtaining simulated spectra with BOMD. The process is identical for both the cyanide test cases and the DTDCPB monomer.}
+\label{fig:BOMDplan}
+\end{figure}
+
+\par BOMD was applied to a cyanide ion as a test case to model the nitriles on DTDCPB. Subsequently, it was applied to the monomer in zero field and applied fields. The systems were brought to ideal initial conditions ``Production MD'' steps by performing thermal Monte Carlo sampling in the electric field to generate multiple nuclear trajectories with thermally populated vibrational normal modes. The production MD runs yielded the dipole time series for calculating the spectra. The individual spectra from the multiple production MD runs can be averaged in the frequency domain to obtain a single spectrum from multiple BOMD runs. Our BOMD application scheme follows that outlined in Figure \ref{fig:BOMDplan}. (\textbf{220 words})
 
 %---------------------------------------------------------------------------------------------------------------------------------
 %RESULTS
@@ -187,6 +201,9 @@ The frequencies of both stretches in the presence of a static field are presente
  \hline
 \end{tabular}
 \end{table}
+
+\textbf{177 words in text}
+
 %---------------------------------------------------------------------------------------------------------------------------------
 %DISCUSSION
 %---------------------------------------------------------------------------------------------------------------------------------
